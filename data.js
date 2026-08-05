@@ -3,21 +3,21 @@ const DATA =
   "summary": {
     "flightCount": 10,
     "teamCount": 80,
-    "avgBid": 1700,
+    "avgBid": 1707.5,
     "topFlight": 1,
-    "topFlightTotal": 21500
+    "topFlightTotal": 22100
   },
   "shootout": {
-    "bonusPool": 4050,
-    "firstPlace": 2025,
-    "secondPlace": 1215,
+    "bonusPool": 4060,
+    "firstPlace": 2030,
+    "secondPlace": 1220,
     "thirdPlace": 810
   },
-  "lastUpdated": "2026-08-05T23:13:26.754Z",
+  "lastUpdated": "2026-08-05T23:44:23.031Z",
   "flights": [
     {
       "flight": 1,
-      "total": 21500,
+      "total": 22100,
       "teams": [
         {
           "team": 1,
@@ -51,7 +51,7 @@ const DATA =
         },
         {
           "team": 4,
-          "bid": 1900,
+          "bid": 2500,
           "owner": "Aghazadeh, Abdol",
           "member": "Lambert, Jeff",
           "guest": "White, Jason",
@@ -105,7 +105,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "1",
-          "amount": 6535,
+          "amount": 6720,
           "winner": "Maples, Brent",
           "owner": "Maples, Brent"
         },
@@ -113,7 +113,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "2",
-          "amount": 3920,
+          "amount": 4030,
           "winner": "Kim, Steven",
           "owner": "Godhania, Vikas"
         },
@@ -121,7 +121,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "3",
-          "amount": 2615,
+          "amount": 2685,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         }
@@ -131,7 +131,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "1",
-          "amount": 1170,
+          "amount": 1205,
           "winner": "Brijalba, Rufus",
           "owner": "Brijalba, Rufus"
         },
@@ -139,7 +139,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "2",
-          "amount": 700,
+          "amount": 720,
           "winner": "Kim, Steven",
           "owner": "Godhania, Vikas"
         },
@@ -147,7 +147,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "3",
-          "amount": 465,
+          "amount": 480,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -155,7 +155,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "1",
-          "amount": 1170,
+          "amount": 1205,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -163,7 +163,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "2",
-          "amount": 700,
+          "amount": 720,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -171,7 +171,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "3",
-          "amount": 465,
+          "amount": 480,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -179,7 +179,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "1",
-          "amount": 1170,
+          "amount": 1205,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -187,7 +187,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
-          "amount": 700,
+          "amount": 720,
           "winner": "Kim, Steven",
           "owner": "Godhania, Vikas"
         },
@@ -195,7 +195,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
-          "amount": 465,
+          "amount": 480,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         }
@@ -1878,12 +1878,12 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-08-05T23:13:26.754Z"
+    "generated": "2026-08-05T23:44:23.031Z"
   },
   "_dataCheck": {
     "flightCount": 10,
     "teamCount": 80,
-    "sumOfFlightTotals": 136000,
-    "sumOfTeamBids": 136000
+    "sumOfFlightTotals": 136600,
+    "sumOfTeamBids": 136600
   }
 };
