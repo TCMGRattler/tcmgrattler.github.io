@@ -13,11 +13,7 @@ const DATA =
     "secondPlace": 1205,
     "thirdPlace": 800
   },
-<<<<<<< HEAD
   "lastUpdated": "2026-08-05T22:38:53.488Z",
-=======
-  "lastUpdated": "2026-08-05T20:07:41.555Z",
->>>>>>> cfabd7f8588df28f7bb2b76d6527b3546b8ff4a4
   "flights": [
     {
       "flight": 1,
@@ -312,13 +308,8 @@ const DATA =
           "day": "",
           "place": "3",
           "amount": 2550,
-<<<<<<< HEAD
           "winner": "Lau, Jason",
           "owner": "Brymer, Cory"
-=======
-          "winner": "Bellomio, Ron",
-          "owner": "Bellomio, Ron"
->>>>>>> cfabd7f8588df28f7bb2b76d6527b3546b8ff4a4
         }
       ],
       "day_money": [
@@ -1887,11 +1878,7 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-<<<<<<< HEAD
     "generated": "2026-08-05T22:38:53.489Z"
-=======
-    "generated": "2026-08-05T20:07:41.556Z"
->>>>>>> cfabd7f8588df28f7bb2b76d6527b3546b8ff4a4
   },
   "_dataCheck": {
     "flightCount": 10,
