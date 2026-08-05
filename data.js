@@ -3,21 +3,21 @@ const DATA =
   "summary": {
     "flightCount": 10,
     "teamCount": 80,
-    "avgBid": 1686.25,
+    "avgBid": 1688.75,
     "topFlight": 2,
-    "topFlightTotal": 22000
+    "topFlightTotal": 21000
   },
   "shootout": {
-    "bonusPool": 4010,
-    "firstPlace": 2005,
+    "bonusPool": 4015,
+    "firstPlace": 2010,
     "secondPlace": 1205,
     "thirdPlace": 800
   },
-  "lastUpdated": "2026-08-05T15:07:33.037Z",
+  "lastUpdated": "2026-08-05T22:38:53.488Z",
   "flights": [
     {
       "flight": 1,
-      "total": 19400,
+      "total": 20600,
       "teams": [
         {
           "team": 1,
@@ -91,7 +91,7 @@ const DATA =
         },
         {
           "team": 8,
-          "bid": 1800,
+          "bid": 3000,
           "owner": "Vidrine, Scot",
           "member": "Black, Gene",
           "guest": "Tilson, Scott",
@@ -105,23 +105,23 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "1",
-          "amount": 5895,
-          "winner": "Paschke, Michael",
-          "owner": "Edwards, Patric"
+          "amount": 6260,
+          "winner": "Lambert, Jeff",
+          "owner": "Aghazadeh, Abdol"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
-          "amount": 3535,
-          "winner": "Paschke, Michael",
-          "owner": "Edwards, Patric"
+          "amount": 3755,
+          "winner": "Harwood, Michael",
+          "owner": "Harwood, Michael"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
-          "amount": 2355,
+          "amount": 2505,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         }
@@ -131,23 +131,23 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "1",
-          "amount": 1055,
-          "winner": "Paschke, Michael",
-          "owner": "Edwards, Patric"
+          "amount": 1120,
+          "winner": "Brijalba, Rufus",
+          "owner": "Brijalba, Rufus"
         },
         {
           "type": "Day Money",
           "day": "Thursday",
           "place": "2",
-          "amount": 630,
-          "winner": "Paschke, Michael",
-          "owner": "Edwards, Patric"
+          "amount": 670,
+          "winner": "Kim, Steven",
+          "owner": "Godhania, Vikas"
         },
         {
           "type": "Day Money",
           "day": "Thursday",
           "place": "3",
-          "amount": 420,
+          "amount": 445,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -155,7 +155,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "1",
-          "amount": 1055,
+          "amount": 1120,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -163,7 +163,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "2",
-          "amount": 630,
+          "amount": 670,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -171,7 +171,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "3",
-          "amount": 420,
+          "amount": 445,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -179,7 +179,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "1",
-          "amount": 1055,
+          "amount": 1120,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -187,15 +187,15 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
-          "amount": 630,
-          "winner": "Paschke, Michael",
-          "owner": "Edwards, Patric"
+          "amount": 670,
+          "winner": "Kim, Steven",
+          "owner": "Godhania, Vikas"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
-          "amount": 420,
+          "amount": 445,
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         }
@@ -203,7 +203,7 @@ const DATA =
     },
     {
       "flight": 2,
-      "total": 22000,
+      "total": 21000,
       "teams": [
         {
           "team": 1,
@@ -257,7 +257,7 @@ const DATA =
         },
         {
           "team": 6,
-          "bid": 6000,
+          "bid": 5000,
           "owner": "Godhania, Vikas",
           "member": "Vaughn, Earl",
           "guest": "Cowden, Cole",
@@ -291,7 +291,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "1",
-          "amount": 6690,
+          "amount": 6380,
           "winner": "Sherman, Michael",
           "owner": "Brymer, Cory"
         },
@@ -299,7 +299,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "2",
-          "amount": 4010,
+          "amount": 3830,
           "winner": "Fulmer, Austen",
           "owner": "Aghazadeh, Abdol"
         },
@@ -307,9 +307,9 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "3",
-          "amount": 2675,
-          "winner": "Bellomio, Ron",
-          "owner": "Bellomio, Ron"
+          "amount": 2550,
+          "winner": "Lau, Jason",
+          "owner": "Brymer, Cory"
         }
       ],
       "day_money": [
@@ -317,7 +317,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "1",
-          "amount": 1200,
+          "amount": 1145,
           "winner": "Escobar, Rafael",
           "owner": "Bohnen, John"
         },
@@ -325,7 +325,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "2",
-          "amount": 720,
+          "amount": 685,
           "winner": "Sherman, Michael",
           "owner": "Brymer, Cory"
         },
@@ -333,7 +333,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "3",
-          "amount": 480,
+          "amount": 455,
           "winner": "Peterson, Erik",
           "owner": "Aghazadeh, Abdol"
         },
@@ -341,7 +341,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "1",
-          "amount": 1200,
+          "amount": 1145,
           "winner": "0",
           "owner": "#N/A"
         },
@@ -349,7 +349,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "2",
-          "amount": 720,
+          "amount": 685,
           "winner": "Bellomio, Ron",
           "owner": "Bellomio, Ron"
         },
@@ -357,7 +357,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "3",
-          "amount": 480,
+          "amount": 455,
           "winner": "Sherman, Michael",
           "owner": "Brymer, Cory"
         },
@@ -365,7 +365,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "1",
-          "amount": 1200,
+          "amount": 1145,
           "winner": "Sherman, Michael",
           "owner": "Brymer, Cory"
         },
@@ -373,7 +373,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
-          "amount": 720,
+          "amount": 685,
           "winner": "Purslow, Brock",
           "owner": "Drain, Zip"
         },
@@ -381,7 +381,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
-          "amount": 480,
+          "amount": 455,
           "winner": "0",
           "owner": "#N/A"
         }
@@ -1878,12 +1878,12 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-08-05T15:07:33.037Z"
+    "generated": "2026-08-05T22:38:53.489Z"
   },
   "_dataCheck": {
     "flightCount": 10,
     "teamCount": 80,
-    "sumOfFlightTotals": 134900,
-    "sumOfTeamBids": 134900
+    "sumOfFlightTotals": 135100,
+    "sumOfTeamBids": 135100
   }
 };
