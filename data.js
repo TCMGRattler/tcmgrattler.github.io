@@ -3,7 +3,6 @@ const DATA =
   "summary": {
     "flightCount": 10,
     "teamCount": 80,
-<<<<<<< HEAD
     "avgBid": 1700,
     "topFlight": 1,
     "topFlightTotal": 21500
@@ -19,23 +18,6 @@ const DATA =
     {
       "flight": 1,
       "total": 21500,
-=======
-    "avgBid": 1688.75,
-    "topFlight": 2,
-    "topFlightTotal": 21000
-  },
-  "shootout": {
-    "bonusPool": 4015,
-    "firstPlace": 2010,
-    "secondPlace": 1205,
-    "thirdPlace": 800
-  },
-  "lastUpdated": "2026-08-05T22:38:53.488Z",
-  "flights": [
-    {
-      "flight": 1,
-      "total": 20600,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
       "teams": [
         {
           "team": 1,
@@ -79,11 +61,7 @@ const DATA =
         },
         {
           "team": 5,
-<<<<<<< HEAD
           "bid": 2500,
-=======
-          "bid": 1600,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "owner": "Godhania, Vikas",
           "member": "Kim, Steven",
           "guest": "Kerrigan, Mike",
@@ -127,39 +105,23 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "1",
-<<<<<<< HEAD
           "amount": 6535,
           "winner": "Maples, Brent",
           "owner": "Maples, Brent"
-=======
-          "amount": 6260,
-          "winner": "Lambert, Jeff",
-          "owner": "Aghazadeh, Abdol"
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
-<<<<<<< HEAD
           "amount": 3920,
           "winner": "Kim, Steven",
           "owner": "Godhania, Vikas"
-=======
-          "amount": 3755,
-          "winner": "Harwood, Michael",
-          "owner": "Harwood, Michael"
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
-<<<<<<< HEAD
           "amount": 2615,
-=======
-          "amount": 2505,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         }
@@ -169,11 +131,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "1",
-<<<<<<< HEAD
           "amount": 1170,
-=======
-          "amount": 1120,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Brijalba, Rufus",
           "owner": "Brijalba, Rufus"
         },
@@ -181,11 +139,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "2",
-<<<<<<< HEAD
           "amount": 700,
-=======
-          "amount": 670,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Kim, Steven",
           "owner": "Godhania, Vikas"
         },
@@ -193,11 +147,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "3",
-<<<<<<< HEAD
           "amount": 465,
-=======
-          "amount": 445,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -205,11 +155,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "1",
-<<<<<<< HEAD
           "amount": 1170,
-=======
-          "amount": 1120,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -217,11 +163,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "2",
-<<<<<<< HEAD
           "amount": 700,
-=======
-          "amount": 670,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -229,11 +171,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "3",
-<<<<<<< HEAD
           "amount": 465,
-=======
-          "amount": 445,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -241,11 +179,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "1",
-<<<<<<< HEAD
           "amount": 1170,
-=======
-          "amount": 1120,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         },
@@ -253,11 +187,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
-<<<<<<< HEAD
           "amount": 700,
-=======
-          "amount": 670,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Kim, Steven",
           "owner": "Godhania, Vikas"
         },
@@ -265,11 +195,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
-<<<<<<< HEAD
           "amount": 465,
-=======
-          "amount": 445,
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
           "winner": "Paschke, Michael",
           "owner": "Edwards, Patric"
         }
@@ -1952,21 +1878,12 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-<<<<<<< HEAD
     "generated": "2026-08-05T23:13:26.754Z"
-=======
-    "generated": "2026-08-05T22:38:53.489Z"
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
   },
   "_dataCheck": {
     "flightCount": 10,
     "teamCount": 80,
-<<<<<<< HEAD
     "sumOfFlightTotals": 136000,
     "sumOfTeamBids": 136000
-=======
-    "sumOfFlightTotals": 135100,
-    "sumOfTeamBids": 135100
->>>>>>> 4aa688383fac38fce7b8389c5b9bc61a3aa6dc0b
   }
 };
