@@ -1,0 +1,910 @@
+interface RowObject {
+    [key: string]: string;
+}
+
+interface TeamJson {
+    team: number;
+    bid: number;
+    owner: string;
+    member: string;
+    guest: string;
+    team_hcp: string;
+    member_hcp: string;
+    guest_hcp: string;
+}
+
+interface AwardJson {
+    type: string;
+    day: string;
+    place: string;
+    amount: number;
+    winner: string;
+    owner: string;
+}
+
+interface FlightJson {
+    flight: number;
+    total: number;
+    teams: TeamJson[];
+    flight_winners: AwardJson[];
+    day_money: AwardJson[];
+}
+
+interface SummaryJson {
+    flightCount: number;
+    teamCount: number;
+    avgBid: number;
+    topFlight: number;
+    topFlightTotal: number;
+}
+
+interface ShootoutJson {
+    bonusPool: number;
+    firstPlace: number;
+    secondPlace: number;
+    thirdPlace: number;
+}
+
+interface SourceJson {
+    file: string;
+    generated: string;
+}
+
+interface DataCheckJson {
+    flightCount: number;
+    teamCount: number;
+    sumOfFlightTotals: number;
+    sumOfTeamBids: number;
+}
+
+interface DataJson {
+    summary: SummaryJson;
+    shootout: ShootoutJson;
+    lastUpdated: string;
+    flights: FlightJson[];
+    _source: SourceJson;
+    _dataCheck: DataCheckJson;
+}
+
+function main(workbook: ExcelScript.Workbook): string {
+
+    const teams: RowObject[] =
+        tableToObjects(
+            workbook,
+            "tblTeams"
+        );
+
+    const winners: RowObject[] =
+        tableToObjects(
+            workbook,
+            "tblFlightWinners"
+        );
+
+    const dayMoney: RowObject[] =
+        tableToObjects(
+            workbook,
+            "tblDayMoney"
+        );
+
+    const shootoutRows: RowObject[] =
+        tableToObjects(
+            workbook,
+            "tblShootout"
+        );
+
+    console.log(
+        "Teams: " + String(teams.length)
+    );
+
+    console.log(
+        "Flight Winners: " + String(winners.length)
+    );
+
+    console.log(
+        "Day Money: " + String(dayMoney.length)
+    );
+
+    console.log(
+        "Shootout: " + String(shootoutRows.length)
+    );
+
+    const flights: FlightJson[] =
+        buildFlights(
+            teams,
+            winners,
+            dayMoney
+        );
+
+    const summary: SummaryJson =
+        buildSummary(
+            teams,
+            flights
+        );
+
+    const shootout: ShootoutJson =
+        buildShootout(
+            shootoutRows
+        );
+
+    const dataCheck: DataCheckJson =
+        buildDataCheck(
+            flights
+        );
+
+    const data: DataJson = {
+
+        summary:
+            summary,
+
+        shootout:
+            shootout,
+
+        lastUpdated:
+            new Date()
+                .toISOString(),
+
+        flights:
+            flights,
+
+        _source: {
+
+            file:
+                "2026 MG Master Spreadsheet v1.xlsx",
+
+            generated:
+                new Date()
+                    .toISOString()
+
+        },
+
+        _dataCheck:
+            dataCheck
+
+    };
+
+    const jsonText: string =
+        JSON.stringify(
+            data,
+            null,
+            2
+        );
+    const jsText: string =
+        "const DATA =\n" +
+        jsonText +
+        ";";
+
+    writeJsToWorksheet(
+        workbook,
+        jsText
+    );
+
+  return jsText;
+
+}
+
+function tableToObjects(
+    workbook: ExcelScript.Workbook,
+    tableName: string
+): RowObject[] {
+
+    const tables: ExcelScript.Table[] =
+        workbook.getTables();
+
+    let targetTable:
+        ExcelScript.Table | undefined =
+        undefined;
+
+    for (
+        let i: number = 0;
+        i < tables.length;
+        i++
+    ) {
+
+        if (
+            tables[i].getName() === tableName
+        ) {
+
+            targetTable =
+                tables[i];
+
+        }
+
+    }
+
+    if (!targetTable) {
+
+        throw new Error(
+            "Table not found: " + tableName
+        );
+
+    }
+
+    const rows: string[][] =
+        targetTable
+            .getRange()
+            .getTexts();
+
+    if (
+        rows.length === 0
+    ) {
+
+        return [];
+
+    }
+
+    const headers: string[] =
+        rows[0];
+
+    const output: RowObject[] =
+        [];
+
+    for (
+        let r: number = 1;
+        r < rows.length;
+        r++
+    ) {
+
+        const obj: RowObject =
+            {};
+
+        let hasData: boolean =
+            false;
+
+        for (
+            let c: number = 0;
+            c < headers.length;
+            c++
+        ) {
+
+            const value: string =
+                String(
+                    rows[r][c] || ""
+                ).trim();
+
+            obj[
+                headers[c]
+            ] =
+                value;
+
+            if (
+                value !== ""
+            ) {
+
+                hasData =
+                    true;
+
+            }
+
+        }
+
+        if (
+            hasData
+        ) {
+
+            output.push(
+                obj
+            );
+
+        }
+
+    }
+
+    return output;
+
+}
+
+function buildFlights(
+    teams: RowObject[],
+    winners: RowObject[],
+    dayMoney: RowObject[]
+): FlightJson[] {
+
+    const uniqueFlights: {
+        [key: number]: boolean
+    } = {};
+
+    teams.forEach(
+        (
+            t: RowObject
+        ) => {
+
+            const flightNumber: number =
+                toNumber(
+                    getValue(
+                        t,
+                        "Flight"
+                    )
+                );
+
+            if (
+                flightNumber > 0
+            ) {
+
+                uniqueFlights[
+                    flightNumber
+                ] =
+                    true;
+
+            }
+
+        }
+    );
+
+    const flightNums: number[] =
+        Object.keys(
+            uniqueFlights
+        )
+            .map(
+                (
+                    key: string
+                ): number =>
+                    Number(key)
+            )
+            .sort(
+                (
+                    a: number,
+                    b: number
+                ): number =>
+                    a - b
+            );
+
+    const flights: FlightJson[] =
+        [];
+
+    flightNums.forEach(
+        (
+            f: number
+        ) => {
+
+            const flightTeamsRaw: RowObject[] =
+                teams.filter(
+                    (
+                        t: RowObject
+                    ): boolean =>
+                        toNumber(
+                            getValue(
+                                t,
+                                "Flight"
+                            )
+                        ) === f
+                );
+
+            const flightTeams: TeamJson[] =
+                flightTeamsRaw.map(
+                    (
+                        t: RowObject
+                    ): TeamJson => ({
+
+                        team:
+                            toNumber(
+                                getValue(
+                                    t,
+                                    "Team"
+                                )
+                            ),
+
+                        bid:
+                            toNumber(
+                                getValue(
+                                    t,
+                                    "Bid"
+                                )
+                            ),
+
+                        owner:
+                            getValue(
+                                t,
+                                "Owner"
+                            ),
+
+                        member:
+                            getValue(
+                                t,
+                                "Member"
+                            ),
+
+                        guest:
+                            getValue(
+                                t,
+                                "Guest"
+                            ),
+
+                        team_hcp:
+                            getValue(
+                                t,
+                                "TeamHCP"
+                            ),
+
+                        member_hcp:
+                            getValue(
+                                t,
+                                "MemberHCP"
+                            ),
+
+                        guest_hcp:
+                            getValue(
+                                t,
+                                "GuestHCP"
+                            )
+
+                    })
+                );
+
+            const flightTotal: number =
+                flightTeams.reduce(
+                    (
+                        sum: number,
+                        t: TeamJson
+                    ): number =>
+                        sum + t.bid,
+                    0
+                );
+
+            const flightWinners: AwardJson[] =
+                winners
+                    .filter(
+                        (
+                            w: RowObject
+                        ): boolean =>
+                            toNumber(
+                                getValue(
+                                    w,
+                                    "Flight"
+                                )
+                            ) === f
+                    )
+                    .map(
+                        (
+                            w: RowObject
+                        ): AwardJson => ({
+
+                            type:
+                                "Flight Winner",
+
+                            day:
+                                "",
+
+                            place:
+                                getValue(
+                                    w,
+                                    "Place"
+                                ),
+
+                            amount:
+                                toNumber(
+                                    getValue(
+                                        w,
+                                        "Amount"
+                                    )
+                                ),
+
+                            winner:
+                                getValue(
+                                    w,
+                                    "Winner"
+                                ),
+
+                            owner:
+                                getValue(
+                                    w,
+                                    "Owner"
+                                )
+
+                        })
+                    );
+
+            const dayMoneyRows: AwardJson[] =
+                dayMoney
+                    .filter(
+                        (
+                            d: RowObject
+                        ): boolean =>
+                            toNumber(
+                                getValue(
+                                    d,
+                                    "Flight"
+                                )
+                            ) === f
+                    )
+                    .map(
+                        (
+                            d: RowObject
+                        ): AwardJson => ({
+
+                            type:
+                                "Day Money",
+
+                            day:
+                                getValue(
+                                    d,
+                                    "Day"
+                                ),
+
+                            place:
+                                getValue(
+                                    d,
+                                    "Place"
+                                ),
+
+                            amount:
+                                toNumber(
+                                    getValue(
+                                        d,
+                                        "Amount"
+                                    )
+                                ),
+
+                            winner:
+                                getValue(
+                                    d,
+                                    "Winner"
+                                ),
+
+                            owner:
+                                getValue(
+                                    d,
+                                    "Owner"
+                                )
+
+                        })
+                    );
+
+            flights.push(
+                {
+
+                    flight:
+                        f,
+
+                    total:
+                        flightTotal,
+
+                    teams:
+                        flightTeams,
+
+                    flight_winners:
+                        flightWinners,
+
+                    day_money:
+                        dayMoneyRows
+
+                }
+            );
+
+        }
+    );
+
+    return flights;
+
+}
+
+function buildSummary(
+    teams: RowObject[],
+    flights: FlightJson[]
+): SummaryJson {
+
+    let totalBid: number =
+        0;
+
+    teams.forEach(
+        (
+            t: RowObject
+        ) => {
+
+            totalBid =
+                totalBid +
+                toNumber(
+                    getValue(
+                        t,
+                        "Bid"
+                    )
+                );
+
+        }
+    );
+
+    let topFlight: number =
+        0;
+
+    let topFlightTotal: number =
+        0;
+
+    flights.forEach(
+        (
+            f: FlightJson
+        ) => {
+
+            if (
+                f.total > topFlightTotal
+            ) {
+
+                topFlightTotal =
+                    f.total;
+
+                topFlight =
+                    f.flight;
+
+            }
+
+        }
+    );
+
+    return {
+
+        flightCount:
+            flights.length,
+
+        teamCount:
+            teams.length,
+
+        avgBid:
+            teams.length > 0
+                ? totalBid / teams.length
+                : 0,
+
+        topFlight:
+            topFlight,
+
+        topFlightTotal:
+            topFlightTotal
+
+    };
+
+}
+
+function buildShootout(
+    shootoutRows: RowObject[]
+): ShootoutJson {
+
+    if (
+        shootoutRows.length === 0
+    ) {
+
+        return {
+
+            bonusPool:
+                0,
+
+            firstPlace:
+                0,
+
+            secondPlace:
+                0,
+
+            thirdPlace:
+                0
+
+        };
+
+    }
+
+    const row: RowObject =
+        shootoutRows[0];
+
+    return {
+
+        bonusPool:
+            toNumber(
+                getValue(
+                    row,
+                    "BonusPool"
+                )
+            ),
+
+        firstPlace:
+            toNumber(
+                getValue(
+                    row,
+                    "FirstPlace"
+                )
+            ),
+
+        secondPlace:
+            toNumber(
+                getValue(
+                    row,
+                    "SecondPlace"
+                )
+            ),
+
+        thirdPlace:
+            toNumber(
+                getValue(
+                    row,
+                    "ThirdPlace"
+                )
+            )
+
+    };
+
+}
+
+function buildDataCheck(
+    flights: FlightJson[]
+): DataCheckJson {
+
+    let sumOfFlightTotals: number =
+        0;
+
+    let sumOfTeamBids: number =
+        0;
+
+    let teamCount: number =
+        0;
+
+    flights.forEach(
+        (
+            f: FlightJson
+        ) => {
+
+            sumOfFlightTotals =
+                sumOfFlightTotals +
+                f.total;
+
+            f.teams.forEach(
+                (
+                    t: TeamJson
+                ) => {
+
+                    sumOfTeamBids =
+                        sumOfTeamBids +
+                        t.bid;
+
+                    teamCount =
+                        teamCount +
+                        1;
+
+                }
+            );
+
+        }
+    );
+
+    return {
+
+        flightCount:
+            flights.length,
+
+        teamCount:
+            teamCount,
+
+        sumOfFlightTotals:
+            sumOfFlightTotals,
+
+        sumOfTeamBids:
+            sumOfTeamBids
+
+    };
+
+}
+
+function writeJsToWorksheet(
+  workbook: ExcelScript.Workbook,
+  jsText: string
+): void {
+
+  let outputSheet:
+    ExcelScript.Worksheet | undefined =
+    workbook.getWorksheet(
+      "JS_Output"
+    );
+
+  if (!outputSheet) {
+
+    outputSheet =
+      workbook.addWorksheet(
+        "JS_Output"
+      );
+
+  }
+
+  const usedRange:
+    ExcelScript.Range | undefined =
+    outputSheet.getUsedRange();
+
+  if (usedRange) {
+
+    usedRange.clear();
+
+  }
+
+  const lines: string[] =
+    jsText.split(
+      "\n"
+    );
+
+  const values: string[][] =
+    lines.map(
+      (
+        line: string
+      ): string[] => [
+          line
+        ]
+    );
+
+  outputSheet
+    .getRangeByIndexes(
+      0,
+      0,
+      values.length,
+      1
+    )
+    .setValues(
+      values
+    );
+
+  outputSheet
+    .getRange(
+      "C1"
+    )
+    .setValue(
+      "JavaScript DATA file generated"
+    );
+
+  outputSheet
+    .getRange(
+      "C2"
+    )
+    .setValue(
+      new Date()
+        .toISOString()
+    );
+
+  outputSheet
+    .getRange(
+      "C3"
+    )
+    .setValue(
+      "Save Column A as data.js"
+    );
+
+}
+
+function getValue(
+    row: RowObject,
+    key: string
+): string {
+
+    if (
+        row[key] !== undefined
+    ) {
+
+        return row[key];
+
+    }
+
+    return "";
+
+}
+
+function toNumber(
+    value: string
+): number {
+
+    const cleaned: string =
+        String(
+            value || ""
+        )
+            .replace(
+                /[$,]/g,
+                ""
+            )
+            .trim();
+
+    const parsed: number =
+        Number(
+            cleaned
+        );
+
+    if (
+        isNaN(
+            parsed
+        )
+    ) {
+
+        return 0;
+
+    }
+
+    return parsed;
+
+}
