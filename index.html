@@ -248,7 +248,12 @@
 
 .summary-entry{display:flex;justify-content:space-between;gap:2px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:8px;margin-top:2px;font-size:12px}
 
-.award-title{font-weight:950;color:#9a3412;font-size:12px}.award-detail{color:#334155;font-size:12px}
+.award-title{font-weight:950;color:#9a3412;font-size:12px}
+.award-detail{color:#334155;font-size:12px}
+
+.award-place{
+  font-weight:950;
+}
 
 .flight-winner-title{
   color:#1d4ed8;
@@ -460,7 +465,15 @@ function renderTeamAward(a){return `<div class="team-award-pill"><div>
   ${esc(a.type)}
 </div>
 
-<div class="team-award-detail">${a.day?esc(a.day)+' · ':''}${esc(placeLabel(a.place))} · ${esc(cleanVal(a.winner))}</div></div><div class="team-award-amount">${money(+a.amount||0)}</div></div>`}
+<div class="team-award-detail">
+	
+	<span class="award-place">
+	${esc(placeLabel(a.place))} 
+        </span> · 
+	${a.day?esc(a.day)+'  ':''}
+	</div></div><div class="team-award-amount">${money(+a.amount||0)}</div></div>`}
+
+
 function renderTeamAwards(t,selected){if(!selected)return '';let total=teamAwardAmountTotal(t);return `<div class="team-awards"><div class="team-awards-title"><span>Team Earnings</span><span class="team-payout-total-badge">${money(total)}</span></div>${t.awards&&t.awards.length?t.awards.map(renderTeamAward).join(''):'<div class="team-award-empty">No Flight Winner or Day Money payout listed for this team.</div>'}</div>`}
 function renderTeamsPage(){let lookupTeams=teamsByMemberAZ();document.getElementById('teams').innerHTML=`<div class="section-title">Teams</div><div class="control-stack"><div class="team-sort-label">Team Lookup: Member / Guest</div><select id="teamLookup" onchange="renderTeamList()"><option value="">All Teams</option>${lookupTeams.map(t=>`<option value="${esc(t.key)}">${esc(t.member)} / ${esc(t.guest)}</option>`).join('')}</select></div><div id="teamCount" class="team-count-note"></div><div id="teamSelectedNote" class="team-selected-note"></div><div id="teamList" class="team-directory"></div>`;renderTeamList()}
 function renderTeamCard(t,selected){return `<article class="team-card"><div class="team-card-grid">
@@ -528,8 +541,11 @@ return `<div class="summary-entry">
 </div>
 
 <div class="award-detail">
-${a.day?' · '+esc(a.day):''} · 
-${esc(placeLabel(a.place))} 
+	 
+      <span class="award-place">
+	${esc(placeLabel(a.place))} ·
+      </span>
+	${a.day?'  '+esc(a.day):''} 
 </div></div><div class="award-amt">${money(+a.amount||0)}</div></div>`}
 
 function awardRowNoName(a){
@@ -543,8 +559,10 @@ function awardRowNoName(a){
 </div>
         
         <div class="award-detail">
-          ${a.day?' · '+esc(a.day):''} ·
-          ${esc(placeLabel(a.place))} ·
+          <span class="award-place">
+	${esc(placeLabel(a.place))} 
+      </span>
+	${a.day?' · '+esc(a.day):''} ·
 	  ${esc(cleanVal(a.winner))}
 
         </div>
