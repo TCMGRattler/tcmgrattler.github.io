@@ -13,7 +13,7 @@ const DATA =
     "secondPlace": 1220,
     "thirdPlace": 810
   },
-  "lastUpdated": "2026-08-06T00:10:27.845Z",
+  "lastUpdated": "2026-08-06T00:57:24.018Z",
   "flights": [
     {
       "flight": 1,
@@ -318,8 +318,8 @@ const DATA =
           "day": "Thursday",
           "place": "1",
           "amount": 1145,
-          "winner": "Escobar, Rafael",
-          "owner": "Bohnen, John"
+          "winner": "Lau, Jason",
+          "owner": "Brymer, Cory"
         },
         {
           "type": "Day Money",
@@ -1878,7 +1878,7 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-08-06T00:10:27.845Z"
+    "generated": "2026-08-06T00:57:24.018Z"
   },
   "_dataCheck": {
     "flightCount": 10,
