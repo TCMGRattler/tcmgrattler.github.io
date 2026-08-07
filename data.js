@@ -13,7 +13,7 @@ const DATA =
     "secondPlace": 1220,
     "thirdPlace": 810
   },
-  "lastUpdated": "2026-08-06T00:57:24.018Z",
+  "lastUpdated": "2026-08-07T13:33:33.155Z",
   "flights": [
     {
       "flight": 1,
@@ -114,8 +114,8 @@ const DATA =
           "day": "",
           "place": "2",
           "amount": 4030,
-          "winner": "Kim, Steven",
-          "owner": "Godhania, Vikas"
+          "winner": "Brijalba, Rufus",
+          "owner": "Brijalba, Rufus"
         },
         {
           "type": "Flight Winner",
@@ -156,8 +156,8 @@ const DATA =
           "day": "Friday",
           "place": "1",
           "amount": 1205,
-          "winner": "Paschke, Michael",
-          "owner": "Edwards, Patric"
+          "winner": "Kim, Steven",
+          "owner": "Godhania, Vikas"
         },
         {
           "type": "Day Money",
@@ -1878,7 +1878,7 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-08-06T00:57:24.018Z"
+    "generated": "2026-08-07T13:33:33.155Z"
   },
   "_dataCheck": {
     "flightCount": 10,
