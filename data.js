@@ -13,7 +13,7 @@ const DATA =
     "secondPlace": 1220,
     "thirdPlace": 810
   },
-  "lastUpdated": "2026-08-07T13:33:33.155Z",
+  "lastUpdated": "2026-08-07T15:33:36.000Z",
   "flights": [
     {
       "flight": 1,
@@ -106,24 +106,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 6720,
-          "winner": "Maples, Brent",
-          "owner": "Maples, Brent"
+          "winner": "Harwood, Michael",
+          "owner": "Harwood, Michael"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 4030,
-          "winner": "Brijalba, Rufus",
-          "owner": "Brijalba, Rufus"
+          "winner": "Darter, Bret",
+          "owner": "Darter, Bret"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 2685,
-          "winner": "Paschke, Michael",
-          "owner": "Edwards, Patric"
+          "winner": "Black, Gene",
+          "owner": "Vidrine, Scot"
         }
       ],
       "day_money": [
@@ -132,16 +132,16 @@ const DATA =
           "day": "Thursday",
           "place": "1",
           "amount": 1205,
-          "winner": "Harwood, Michael",
-          "owner": "Harwood, Michael"
+          "winner": "Black, Gene",
+          "owner": "Vidrine, Scot"
         },
         {
           "type": "Day Money",
           "day": "Thursday",
           "place": "2",
           "amount": 720,
-          "winner": "Kim, Steven",
-          "owner": "Godhania, Vikas"
+          "winner": "Paschke, Michael",
+          "owner": "Edwards, Patric"
         },
         {
           "type": "Day Money",
@@ -221,9 +221,9 @@ const DATA =
           "owner": "Aghazadeh, Abdol",
           "member": "Peterson, Erik",
           "guest": "Ferrell, Ryan",
-          "team_hcp": "5.0",
-          "member_hcp": "0.0",
-          "guest_hcp": "5.0"
+          "team_hcp": "5",
+          "member_hcp": "0",
+          "guest_hcp": "5"
         },
         {
           "team": 3,
@@ -241,7 +241,7 @@ const DATA =
           "owner": "Bohnen, John",
           "member": "Escobar, Rafael",
           "guest": "Gillmor, Rob",
-          "team_hcp": "6.0",
+          "team_hcp": "6",
           "member_hcp": "1.5",
           "guest_hcp": "4.5"
         },
@@ -273,7 +273,7 @@ const DATA =
           "guest": "Friggle, Scott",
           "team_hcp": "7.5",
           "member_hcp": "7.5",
-          "guest_hcp": "0.0"
+          "guest_hcp": "0"
         },
         {
           "team": 8,
@@ -282,7 +282,7 @@ const DATA =
           "member": "Purslow, Brock",
           "guest": "Thompson, Brad",
           "team_hcp": "7.6",
-          "member_hcp": "0.0",
+          "member_hcp": "0",
           "guest_hcp": "7.6"
         }
       ],
@@ -343,7 +343,7 @@ const DATA =
           "place": "1",
           "amount": 1145,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -383,7 +383,7 @@ const DATA =
           "place": "3",
           "amount": 455,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         }
       ]
     },
@@ -407,7 +407,7 @@ const DATA =
           "owner": "Scott, Jonathan",
           "member": "Scott, Jonathan",
           "guest": "McGowan, Marshall",
-          "team_hcp": "9.0",
+          "team_hcp": "9",
           "member_hcp": "2.4",
           "guest_hcp": "6.6"
         },
@@ -439,7 +439,7 @@ const DATA =
           "guest": "Flinn, Kyle",
           "team_hcp": "9.5",
           "member_hcp": "1.5",
-          "guest_hcp": "8.0"
+          "guest_hcp": "8"
         },
         {
           "team": 6,
@@ -479,7 +479,7 @@ const DATA =
           "place": "1",
           "amount": 4060,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Flight Winner",
@@ -495,7 +495,7 @@ const DATA =
           "place": "3",
           "amount": 1625,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         }
       ],
       "day_money": [
@@ -505,7 +505,7 @@ const DATA =
           "place": "1",
           "amount": 725,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -513,7 +513,7 @@ const DATA =
           "place": "2",
           "amount": 435,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -529,7 +529,7 @@ const DATA =
           "place": "1",
           "amount": 725,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -537,7 +537,7 @@ const DATA =
           "place": "2",
           "amount": 435,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -545,7 +545,7 @@ const DATA =
           "place": "3",
           "amount": 290,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -553,7 +553,7 @@ const DATA =
           "place": "1",
           "amount": 725,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -561,7 +561,7 @@ const DATA =
           "place": "2",
           "amount": 435,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -569,7 +569,7 @@ const DATA =
           "place": "3",
           "amount": 290,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         }
       ]
     },
@@ -585,7 +585,7 @@ const DATA =
           "guest": "Manas, Shane",
           "team_hcp": "10.4",
           "member_hcp": "4.4",
-          "guest_hcp": "6.0"
+          "guest_hcp": "6"
         },
         {
           "team": 2,
@@ -623,9 +623,9 @@ const DATA =
           "owner": "Vidrine, Scot",
           "member": "Tionloc, Alex",
           "guest": "Hicks, Clay",
-          "team_hcp": "11.0",
-          "member_hcp": "6.0",
-          "guest_hcp": "5.0"
+          "team_hcp": "11",
+          "member_hcp": "6",
+          "guest_hcp": "5"
         },
         {
           "team": 6,
@@ -635,7 +635,7 @@ const DATA =
           "guest": "Redding, David",
           "team_hcp": "11.8",
           "member_hcp": "5.8",
-          "guest_hcp": "6.0"
+          "guest_hcp": "6"
         },
         {
           "team": 7,
@@ -643,7 +643,7 @@ const DATA =
           "owner": "Aghazadeh, Abdol",
           "member": "Waclawsky, Paul",
           "guest": "Anderson, John",
-          "team_hcp": "12.0",
+          "team_hcp": "12",
           "member_hcp": "3.7",
           "guest_hcp": "8.3"
         },
@@ -691,7 +691,7 @@ const DATA =
           "place": "1",
           "amount": 1060,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -699,7 +699,7 @@ const DATA =
           "place": "2",
           "amount": 635,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -707,7 +707,7 @@ const DATA =
           "place": "3",
           "amount": 425,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -715,7 +715,7 @@ const DATA =
           "place": "1",
           "amount": 1060,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -723,7 +723,7 @@ const DATA =
           "place": "2",
           "amount": 635,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -731,7 +731,7 @@ const DATA =
           "place": "3",
           "amount": 425,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -739,7 +739,7 @@ const DATA =
           "place": "1",
           "amount": 1060,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -747,7 +747,7 @@ const DATA =
           "place": "2",
           "amount": 635,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -755,7 +755,7 @@ const DATA =
           "place": "3",
           "amount": 425,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         }
       ]
     },
@@ -770,7 +770,7 @@ const DATA =
           "member": "Scott, Paul",
           "guest": "Stopnik, Sean",
           "team_hcp": "12.5",
-          "member_hcp": "11.0",
+          "member_hcp": "11",
           "guest_hcp": "1.5"
         },
         {
@@ -800,7 +800,7 @@ const DATA =
           "member": "Drain, Zip",
           "guest": "Lange, Mark",
           "team_hcp": "13.2",
-          "member_hcp": "8.0",
+          "member_hcp": "8",
           "guest_hcp": "5.2"
         },
         {
@@ -810,7 +810,7 @@ const DATA =
           "member": "Turner, Trevor",
           "guest": "Sherman, John",
           "team_hcp": "13.3",
-          "member_hcp": "4.0",
+          "member_hcp": "4",
           "guest_hcp": "9.3"
         },
         {
@@ -885,7 +885,7 @@ const DATA =
           "place": "2",
           "amount": 390,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -893,7 +893,7 @@ const DATA =
           "place": "3",
           "amount": 260,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -901,7 +901,7 @@ const DATA =
           "place": "1",
           "amount": 650,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -909,7 +909,7 @@ const DATA =
           "place": "2",
           "amount": 390,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -917,7 +917,7 @@ const DATA =
           "place": "3",
           "amount": 260,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -925,7 +925,7 @@ const DATA =
           "place": "1",
           "amount": 650,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -933,7 +933,7 @@ const DATA =
           "place": "2",
           "amount": 390,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -941,7 +941,7 @@ const DATA =
           "place": "3",
           "amount": 260,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         }
       ]
     },
@@ -995,7 +995,7 @@ const DATA =
           "owner": "Grantham, Mark",
           "member": "Shulman, Brandon",
           "guest": "Schietinger, John",
-          "team_hcp": "16.0",
+          "team_hcp": "16",
           "member_hcp": "10.1",
           "guest_hcp": "5.9"
         },
@@ -1005,7 +1005,7 @@ const DATA =
           "owner": "Fulmer, Austen",
           "member": "Sawyer, Ryan",
           "guest": "Resnick, Dan",
-          "team_hcp": "16.0",
+          "team_hcp": "16",
           "member_hcp": "7.5",
           "guest_hcp": "8.5"
         },
@@ -1045,7 +1045,7 @@ const DATA =
           "place": "2",
           "amount": 2070,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Flight Winner",
@@ -1071,7 +1071,7 @@ const DATA =
           "place": "2",
           "amount": 370,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1079,7 +1079,7 @@ const DATA =
           "place": "3",
           "amount": 245,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1087,7 +1087,7 @@ const DATA =
           "place": "1",
           "amount": 615,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1103,7 +1103,7 @@ const DATA =
           "place": "3",
           "amount": 245,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1119,7 +1119,7 @@ const DATA =
           "place": "2",
           "amount": 370,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1127,7 +1127,7 @@ const DATA =
           "place": "3",
           "amount": 245,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         }
       ]
     },
@@ -1152,7 +1152,7 @@ const DATA =
           "member": "Patel, Bhav",
           "guest": "Ballou, Bob",
           "team_hcp": "17.1",
-          "member_hcp": "8.0",
+          "member_hcp": "8",
           "guest_hcp": "9.1"
         },
         {
@@ -1173,7 +1173,7 @@ const DATA =
           "guest": "March, James",
           "team_hcp": "17.4",
           "member_hcp": "8.4",
-          "guest_hcp": "9.0"
+          "guest_hcp": "9"
         },
         {
           "team": 5,
@@ -1265,7 +1265,7 @@ const DATA =
           "place": "3",
           "amount": 220,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1281,7 +1281,7 @@ const DATA =
           "place": "2",
           "amount": 335,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1289,7 +1289,7 @@ const DATA =
           "place": "3",
           "amount": 220,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1297,7 +1297,7 @@ const DATA =
           "place": "1",
           "amount": 555,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1313,7 +1313,7 @@ const DATA =
           "place": "3",
           "amount": 220,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         }
       ]
     },
@@ -1329,7 +1329,7 @@ const DATA =
           "guest": "Jackson, Paul",
           "team_hcp": "18.8",
           "member_hcp": "9.8",
-          "guest_hcp": "9.0"
+          "guest_hcp": "9"
         },
         {
           "team": 2,
@@ -1339,7 +1339,7 @@ const DATA =
           "guest": "Reddy, Shireesh",
           "team_hcp": "19.2",
           "member_hcp": "6.2",
-          "guest_hcp": "13.0"
+          "guest_hcp": "13"
         },
         {
           "team": 3,
@@ -1349,7 +1349,7 @@ const DATA =
           "guest": "Korndorffer, Brad",
           "team_hcp": "19.6",
           "member_hcp": "2.6",
-          "guest_hcp": "17.0"
+          "guest_hcp": "17"
         },
         {
           "team": 4,
@@ -1357,7 +1357,7 @@ const DATA =
           "owner": "Schnautz, David",
           "member": "McDonald, David",
           "guest": "Williams, Drew",
-          "team_hcp": "20.0",
+          "team_hcp": "20",
           "member_hcp": "6.2",
           "guest_hcp": "13.8"
         },
@@ -1435,7 +1435,7 @@ const DATA =
           "place": "1",
           "amount": 500,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1451,7 +1451,7 @@ const DATA =
           "place": "3",
           "amount": 200,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1467,7 +1467,7 @@ const DATA =
           "place": "2",
           "amount": 300,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1475,7 +1475,7 @@ const DATA =
           "place": "3",
           "amount": 200,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1483,7 +1483,7 @@ const DATA =
           "place": "1",
           "amount": 500,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1491,7 +1491,7 @@ const DATA =
           "place": "2",
           "amount": 300,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1523,7 +1523,7 @@ const DATA =
           "owner": "Bohnen, John",
           "member": "Bohnen, John",
           "guest": "Cobb, Tony",
-          "team_hcp": "23.0",
+          "team_hcp": "23",
           "member_hcp": "5.1",
           "guest_hcp": "17.9"
         },
@@ -1574,7 +1574,7 @@ const DATA =
           "member": "Grantham, Mark",
           "guest": "Shaw, Stuart",
           "team_hcp": "25.5",
-          "member_hcp": "13.0",
+          "member_hcp": "13",
           "guest_hcp": "12.5"
         },
         {
@@ -1629,7 +1629,7 @@ const DATA =
           "place": "2",
           "amount": 300,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1637,7 +1637,7 @@ const DATA =
           "place": "3",
           "amount": 200,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1661,7 +1661,7 @@ const DATA =
           "place": "3",
           "amount": 200,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1677,7 +1677,7 @@ const DATA =
           "place": "2",
           "amount": 300,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1700,7 +1700,7 @@ const DATA =
           "member": "Deangelis, Adam",
           "guest": "Carter, William",
           "team_hcp": "27.7",
-          "member_hcp": "10.0",
+          "member_hcp": "10",
           "guest_hcp": "17.7"
         },
         {
@@ -1710,7 +1710,7 @@ const DATA =
           "member": "Walters, Neil",
           "guest": "Ballard, Tom",
           "team_hcp": "29.3",
-          "member_hcp": "12.0",
+          "member_hcp": "12",
           "guest_hcp": "17.3"
         },
         {
@@ -1741,7 +1741,7 @@ const DATA =
           "guest": "Perkinson, Sebastian",
           "team_hcp": "30.8",
           "member_hcp": "14.8",
-          "guest_hcp": "16.0"
+          "guest_hcp": "16"
         },
         {
           "team": 6,
@@ -1749,7 +1749,7 @@ const DATA =
           "owner": "Cress, Pj",
           "member": "Nesbitt, David",
           "guest": "Parnell, Chris",
-          "team_hcp": "32.0",
+          "team_hcp": "32",
           "member_hcp": "13.5",
           "guest_hcp": "18.5"
         },
@@ -1759,9 +1759,9 @@ const DATA =
           "owner": "Pfaffe, Kyle",
           "member": "Pfaffe, Kyle",
           "guest": "Wallace, Richard",
-          "team_hcp": "33.0",
-          "member_hcp": "16.0",
-          "guest_hcp": "17.0"
+          "team_hcp": "33",
+          "member_hcp": "16",
+          "guest_hcp": "17"
         },
         {
           "team": 8,
@@ -1815,7 +1815,7 @@ const DATA =
           "place": "2",
           "amount": 265,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1823,7 +1823,7 @@ const DATA =
           "place": "3",
           "amount": 175,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1831,7 +1831,7 @@ const DATA =
           "place": "1",
           "amount": 445,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1847,7 +1847,7 @@ const DATA =
           "place": "3",
           "amount": 175,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1855,7 +1855,7 @@ const DATA =
           "place": "1",
           "amount": 445,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1863,7 +1863,7 @@ const DATA =
           "place": "2",
           "amount": 265,
           "winner": "0",
-          "owner": "#N/A"
+          "owner": ""
         },
         {
           "type": "Day Money",
@@ -1878,7 +1878,7 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-08-07T13:33:33.155Z"
+    "generated": "2026-08-07T15:33:36.000Z"
   },
   "_dataCheck": {
     "flightCount": 10,
