@@ -71,7 +71,7 @@
   font-weight:700;
   margin-top:2px;
   text-align:right;
-  width:100%
+  width:100%;
 
   white-space:normal;
   overflow:visible;
@@ -183,7 +183,7 @@
 }
 
 
-.team-card-bid{font-weight:950;color:#16a34a;background:none;border-radius:999px;padding:5px 9px;text-align:center;white-space:nowrap}
+.team-card-bid{font-weight:950;color:var(--red);background:none;border-radius:999px;padding:5px 9px;text-align:center;white-space:nowrap}
 
 .team-player-line{font-size:14px;font-weight:950;color:#0f172a;line-height:1.15}.team-player-line+.team-player-line{margin-top:4px}.team-person-hcp{font-size:11px;font-weight:900;color:#64748b;margin-left:4px}.team-owner-line{grid-column:3/5;font-size:14px;color:#334155;font-weight:950;margin-top:5px}.team-owner-line b{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:.04em}.team-count-note,.team-selected-note,.owner-payout-control-note,.owner-summary-count{font-size:12px;color:#64748b;margin:0 2px 10px}.team-sort-label{font-size:11px;text-transform:uppercase;font-weight:950;color:#64748b;margin:2px 2px -4px}.team-awards{margin-top:11px;border-top:1px solid #e5e7eb;padding-top:9px}
 
@@ -217,9 +217,17 @@
 
 .owner-summary{background:linear-gradient(135deg,#16a34a,#14532d);color:#fff;border-radius:18px;padding:16px;margin-bottom:12px}
 
-.owner-summary .big{font-size:34px;font-weight:950;display:block}.owner-bid-line{margin-top:10px;background:#fff;color:#111827;border:1px solid #111827;border-radius:12px;padding:9px 10px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:950}.owner-bid-label{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#111827!important}.owner-bid-val{font-size:16px;color:#111827!important;white-space:nowrap}.owner-payout-line{margin-top:8px;color:#fff;font-weight:850}
+.owner-summary .big{font-size:34px;font-weight:950;display:block}.owner-bid-line{margin-top:10px;background:#fff;color:#111827;border:1px solid #111827;border-radius:12px;padding:9px 10px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-weight:950}.owner-bid-label{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#111827!important}
+
+.owner-bid-val{font-size:16px;color:var(--red)!important;white-space:nowrap}.owner-payout-line{margin-top:8px;color:#fff;font-weight:850}
 
 .owner-team-card{background:#fff;border:1px solid #d1d5db;border-radius:18px;padding:10px;}
+
+.owner-team-bid{
+  color:var(--red);
+  font-size:13px;
+  font-weight:700;
+}
 
 .team-meta{display:flex;justify-content:space-between;color:#075985;font-size:12px;font-weight:950;margin-bottom:8px}.summary-list,.owner-list{display:grid;gap:2px}
 
@@ -244,7 +252,17 @@
 
 .bid-total-mini{grid-column:1/-1!important;background:#fff!important;border-color:#111827!important;color:#111827!important;display:flex!important;justify-content:space-between!important;align-items:center!important;gap:4px!important}
 
-.bid-total-label,.bid-total-val{color:#111827!important}.bid-total-label{font-size:11px!important;font-weight:950!important;text-transform:uppercase!important;letter-spacing:.04em!important}.bid-total-val{font-size:16px!important;font-weight:950!important}
+.bid-total-label{
+  color:#111827!important;
+}
+
+.bid-total-val{
+  color:var(--red)!important;
+}
+
+.bid-total-label{font-size:11px!important;font-weight:950!important;text-transform:uppercase!important;letter-spacing:.04em!important}
+
+.bid-total-val{font-size:16px!important;font-weight:950!important}
 
 .summary-entry{display:flex;justify-content:space-between;gap:2px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:8px;margin-top:2px;font-size:12px}
 
@@ -573,7 +591,13 @@ function awardRowNoName(a){
 
 
 function renderOwners(){document.getElementById('owners').innerHTML=`<div class="section-title">Owners</div><div class="control-stack"><div class="team-sort-label">Owner Lookup</div><select id="ownerSel" onchange="renderOwnerDetail()"><option value="">Select Owner</option>${ownerNames().map(o=>`<option value="${esc(o)}">${esc(o)}</option>`).join('')}</select></div><div id="ownerDetail"></div><div class="owners-merged-divider"></div><div class="owner-payout-panel"><div class="section-title">Payout Summary</div><div class="owner-payout-control-note">Owner payout totals include Flight Winner and Day Money entries.</div><div class="control-stack"><div class="team-sort-label">Sort Owners</div><select id="ownerPayoutSort" onchange="renderOwnerPayoutSummary()"><option value="az">A-Z</option><option value="za">Z-A</option><option value="payoutHigh" selected>Payout High → Low</option><option value="payoutLow">Payout Low → High</option></select></div><div id="ownerPayoutCount" class="owner-summary-count"></div><div id="ownersPayoutList" class="summary-list"></div></div>`;renderOwnerPayoutSummary()}
-function renderOwnerDetail(){let owner=document.getElementById('ownerSel').value;let panel=document.querySelector('.owner-payout-panel'),divider=document.querySelector('.owners-merged-divider');if(!owner){document.getElementById('ownerDetail').innerHTML='';if(panel)panel.style.display='block';if(divider)divider.style.display='block';renderOwnerPayoutSummary();return}if(panel)panel.style.display='none';if(divider)divider.style.display='none';let rows=ownerTeams(owner),total=rows.reduce((s,r)=>s+r.awards.reduce((x,a)=>x+(+a.amount||0),0),0),bidTotal=rows.reduce((s,r)=>s+(+r.bid||0),0),flight=rows.reduce((s,r)=>s+r.awards.filter(a=>a.type==='Flight Winner').reduce((x,a)=>x+(+a.amount||0),0),0),day=rows.reduce((s,r)=>s+r.awards.filter(a=>a.type==='Day Money').reduce((x,a)=>x+(+a.amount||0),0),0);document.getElementById('ownerDetail').innerHTML=`<div class="owner-summary"><div>Owner Payout Summary</div><span class="big">${money(total)}</span><div class="owner-bid-line"><span class="owner-bid-label">Total Bid Amount</span><span class="owner-bid-val">${money(bidTotal)}</span></div><div class="owner-payout-line">Flight Winner ${money(flight)} · Day Money ${money(day)}</div></div><div class="owner-list">${rows.map(r=>`<div class="owner-team-card"><div class="team-meta"><span>Flight #${r.flight}</span><span>Team ${r.team}</span></div><div class="member">${esc(r.member)}</div><div class="guest">${esc(r.guest)}</div><div class="guest">Team Bid ${money(+r.bid||0)}</div>${r.awards.length?r.awards.map(awardRow).join(''):'<div class="winner-card"><div class="guest">No payout listed for this team.</div></div>'}</div>`).join('')}</div>`}
+function renderOwnerDetail(){let owner=document.getElementById('ownerSel').value;let panel=document.querySelector('.owner-payout-panel'),divider=document.querySelector('.owners-merged-divider');if(!owner){document.getElementById('ownerDetail').innerHTML='';if(panel)panel.style.display='block';if(divider)divider.style.display='block';renderOwnerPayoutSummary();return}if(panel)panel.style.display='none';if(divider)divider.style.display='none';let rows=ownerTeams(owner),total=rows.reduce((s,r)=>s+r.awards.reduce((x,a)=>x+(+a.amount||0),0),0),bidTotal=rows.reduce((s,r)=>s+(+r.bid||0),0),flight=rows.reduce((s,r)=>s+r.awards.filter(a=>a.type==='Flight Winner').reduce((x,a)=>x+(+a.amount||0),0),0),day=rows.reduce((s,r)=>s+r.awards.filter(a=>a.type==='Day Money').reduce((x,a)=>x+(+a.amount||0),0),0);document.getElementById('ownerDetail').innerHTML=`<div class="owner-summary"><div>Owner Payout Summary</div><span class="big">${money(total)}</span><div class="owner-bid-line"><span class="owner-bid-label">Total Bid Amount</span><span class="owner-bid-val">${money(bidTotal)}</span></div><div class="owner-payout-line">Flight Winner ${money(flight)} · Day Money ${money(day)}</div></div><div class="owner-list">${rows.map(r=>`<div class="owner-team-card"><div class="team-meta"><span>Flight #${r.flight}</span><span>Team ${r.team}</span></div><div class="member">${esc(r.member)}</div>
+
+<div class="owner-team-bid">
+  Team Bid ${money(+r.bid||0)}
+</div>
+
+${r.awards.length?r.awards.map(awardRow).join(''):'<div class="winner-card"><div class="guest">No payout listed for this team.</div></div>'}</div>`).join('')}</div>`}
 function renderOwnerPayoutSummary(){let sort=document.getElementById('ownerPayoutSort')?.value||'payoutHigh';let rows=sortOwnerSummaryRows(ownerSummaryRows(),sort);let grand=rows.reduce((s,r)=>s+r.total,0),grandBid=rows.reduce((s,r)=>s+(+r.bidTotal||0),0),count=rows.filter(r=>r.total>0).length;let countEl=document.getElementById('ownerPayoutCount');if(countEl)countEl.textContent=`${count} owners with payouts · ${money(grand)} total shown · ${money(grandBid)} total bids`;let list=document.getElementById('ownersPayoutList');if(list)list.innerHTML=rows.map((r,i)=>`<div class="summary-card ${r.total>0?'has':''}"><div class="summary-top"><div><div class="summary-name">${sort==='payoutHigh'&&r.total>0?'#'+(i+1)+' ':''}${esc(r.owner)}</div><div class="guest">${r.teamCount} teams · ${r.entries.length} payout entries</div></div><div class="summary-total">${money(r.total)}</div></div>
 
 <div class="summary-break"><div class="mini bid-total-mini"><div class="mini-label bid-total-label">Total Bid Amount</div><div class="mini-val bid-total-val">${money(+r.bidTotal||0)}</div></div><div class="mini"><div class="mini-label">Flight Winner</div><div class="mini-val">${money(+r.flight||0)}</div></div><div class="mini"><div class="mini-label">Day Money</div><div class="mini-val">${money(+r.day||0)}</div></div></div>
