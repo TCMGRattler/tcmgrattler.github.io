@@ -13,7 +13,7 @@ const DATA =
     "secondPlace": 275,
     "thirdPlace": 185
   },
-  "lastUpdated": "2026-08-26T18:47:42.000Z",
+  "lastUpdated": "2026-08-26T18:55:31.000Z",
   "flights": [
     {
       "flight": 1,
@@ -22,7 +22,7 @@ const DATA =
         {
           "team": 1,
           "bid": 400,
-          "owner": "Brijalba, Rufus",
+          "owner": "0",
           "member": "Kaplar, Jeff",
           "guest": "Carr, Chesley",
           "team_hcp": "+1.6",
@@ -32,7 +32,7 @@ const DATA =
         {
           "team": 2,
           "bid": 400,
-          "owner": "Edwards, Patric",
+          "owner": "0",
           "member": "Alden, Jonathan",
           "guest": "Seidlits, Lee",
           "team_hcp": "+0.4",
@@ -42,7 +42,7 @@ const DATA =
         {
           "team": 3,
           "bid": 400,
-          "owner": "Harwood, Michael",
+          "owner": "0",
           "member": "Kellner, Timothy",
           "guest": "Dixon, Mike",
           "team_hcp": "1.6",
@@ -52,7 +52,7 @@ const DATA =
         {
           "team": 4,
           "bid": 400,
-          "owner": "Aghazadeh, Abdol",
+          "owner": "0",
           "member": "Kim, Steven",
           "guest": "Kerrigan, Mike",
           "team_hcp": "1.8",
@@ -62,7 +62,7 @@ const DATA =
         {
           "team": 5,
           "bid": 400,
-          "owner": "Godhania, Vikas",
+          "owner": "0",
           "member": "Paschke, Michael",
           "guest": "Montes, Daniel",
           "team_hcp": "2",
@@ -72,7 +72,7 @@ const DATA =
         {
           "team": 6,
           "bid": 400,
-          "owner": "Maples, Brent",
+          "owner": "0",
           "member": "Stokley, Kyle",
           "guest": "Tomlinson, Gary",
           "team_hcp": "2.3",
@@ -82,7 +82,7 @@ const DATA =
         {
           "team": 7,
           "bid": 400,
-          "owner": "Darter, Bret",
+          "owner": "0",
           "member": "Gromfin, Ryan",
           "guest": "Moreno, Jeremy",
           "team_hcp": "3.1",
@@ -92,7 +92,7 @@ const DATA =
         {
           "team": 8,
           "bid": 400,
-          "owner": "Vidrine, Scot",
+          "owner": "0",
           "member": "Escalante, Christian",
           "guest": "McCammon, John",
           "team_hcp": "4.1",
@@ -208,7 +208,7 @@ const DATA =
         {
           "team": 1,
           "bid": 400,
-          "owner": "Brymer, Cory",
+          "owner": "0",
           "member": "Purslow, Brock",
           "guest": "Purslow, Thad",
           "team_hcp": "4.2",
@@ -218,7 +218,7 @@ const DATA =
         {
           "team": 2,
           "bid": 400,
-          "owner": "Aghazadeh, Abdol",
+          "owner": "0",
           "member": "Kemps, Matt",
           "guest": "Dickinson, Todd",
           "team_hcp": "4.6",
@@ -228,7 +228,7 @@ const DATA =
         {
           "team": 3,
           "bid": 400,
-          "owner": "Aghazadeh, Abdol",
+          "owner": "0",
           "member": "Fulmer, Austen",
           "guest": "Pacheco, Jeremy",
           "team_hcp": "5.4",
@@ -238,7 +238,7 @@ const DATA =
         {
           "team": 4,
           "bid": 400,
-          "owner": "Bohnen, John",
+          "owner": "0",
           "member": "Black, Gene",
           "guest": "Tilson, Scott",
           "team_hcp": "6.4",
@@ -248,7 +248,7 @@ const DATA =
         {
           "team": 5,
           "bid": 400,
-          "owner": "Bellomio, Ron",
+          "owner": "0",
           "member": "Gonzalez, Adrian",
           "guest": "Brawley, Bill",
           "team_hcp": "6.5",
@@ -258,7 +258,7 @@ const DATA =
         {
           "team": 6,
           "bid": 400,
-          "owner": "Godhania, Vikas",
+          "owner": "0",
           "member": "Hill, Justin",
           "guest": "Bobbitt, Jason",
           "team_hcp": "6.8",
@@ -268,7 +268,7 @@ const DATA =
         {
           "team": 7,
           "bid": 400,
-          "owner": "Wedgeworth, Cliff",
+          "owner": "0",
           "member": "Martin, Aaron",
           "guest": "Booth, Chuck",
           "team_hcp": "6.9",
@@ -278,7 +278,7 @@ const DATA =
         {
           "team": 8,
           "bid": 400,
-          "owner": "Drain, Zip",
+          "owner": "0",
           "member": "Peterson, Erik",
           "guest": "Ferrell, Ryan",
           "team_hcp": "7",
@@ -1878,7 +1878,7 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-08-26T18:47:42.000Z"
+    "generated": "2026-08-26T18:55:31.000Z"
   },
   "_dataCheck": {
     "flightCount": 10,
