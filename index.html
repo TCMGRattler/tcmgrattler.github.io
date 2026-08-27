@@ -381,16 +381,26 @@ function cleanVal(v){let s=String(v??'').trim();return (s===''||s==='0'||s==='#N
 function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function placeLabel(p){let s=String(p||'');if(s==='1')return '1st';if(s==='2')return '2nd';if(s==='3')return '3rd';return s}
 function badge(place){let p=placeLabel(place);return p.includes('1st')?'<span class="rank gold">1ST</span>':p.includes('2nd')?'<span class="rank silver">2ND</span>':'<span class="rank bronze">3RD</span>'}
-function updateLastUpdated(){let el=document.getElementById('lastUpdated');if(el)el.textContent=DATA.lastUpdated?'Last Updated: '+new 
 
-Date(DATA.lastUpdated).toLocaleString(
+function updateLastUpdated(){let el=document.getElementById('lastUpdated');if(el)
+
+el.textContent =
+'Last Updated: ' +
+new Date(DATA.lastUpdated).toLocaleString(
 	'en-US',
 	{
-	 timeZone: 'America/Chicago',
-	 timeZoneName: 'short'
+	 timeZone:'UTC',
+	 hour12: true,
+	 year: 'numeric',
+	 month: 'numeric',
+	 day: 'numeric',
+	 hour: 'numeric',
+	 minute: '2-digit',
+ 	 second: '2-digit',
 	}
-	)
-:'Last Updated: '+new Date().toLocaleString()}
+	);
+}
+
 function renderCurrentScreen(){if(document.getElementById('home').classList.contains('active'))renderHome();if(document.getElementById('teams').classList.contains('active'))renderTeamsPage();if(document.getElementById('owners').classList.contains('active'))renderOwners();updateLastUpdated()}
 function showScreen(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.screen===id));renderCurrentScreen();window.scrollTo({top:0,behavior:'smooth'})}
 function renderHome(){let s=DATA.summary||{},sh=DATA.shootout||{};document.getElementById('home').innerHTML=`<div class="card shootout"><div class="title">Shoot Out Bonus Pool</div><div class="shoot-grid"><div class="shoot-item"><div class="shoot-label">Bonus Pool</div><div class="shoot-value">${money(+sh.bonusPool||0)}</div></div><div class="shoot-item"><div class="shoot-label">1st</div><div class="shoot-value">${money(+sh.firstPlace||0)}</div></div><div class="shoot-item"><div class="shoot-label">2nd</div><div class="shoot-value">${money(+sh.secondPlace||0)}</div></div><div class="shoot-item"><div class="shoot-label">3rd</div><div class="shoot-value">${money(+sh.thirdPlace||0)}</div></div></div></div><div class="kpi-grid"><div class="card kpi"><div class="label">Flights</div><div class="value">${s.flightCount||0}</div></div><div class="card kpi"><div class="label">Teams</div><div class="value">${s.teamCount||0}</div></div><div class="card kpi"><div class="label">Avg Bid</div><div class="value">${money(+s.avgBid||0)}</div></div><div class="card kpi"><div class="label">Top Flight</div><div class="value top-flight-value">#${s.topFlight||0} • ${money(+s.topFlightTotal||0)}</div></div></div><div class="section-title">Flights</div><div class="control-stack"><select id="homeFlightSel" onchange="renderHomeFlights()"><option value="">All Flights</option>${DATA.flights.map(f=>`<option value="${f.flight}">Flight #${f.flight}</option>`).join('')}</select><select id="homeSortSel" onchange="renderHomeFlights()"><option value="flightAsc">Flight # ↑</option><option value="flightDesc">Flight # ↓</option><option value="bidHigh">Total Bid High → Low</option><option value="bidLow">Total Bid Low → High</option></select></div><div id="homeFlightList" class="flight-list"></div>`;renderHomeFlights()}
