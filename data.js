@@ -13,7 +13,7 @@ const DATA =
     "secondPlace": 275,
     "thirdPlace": 185
   },
-  "lastUpdated": "2026-08-28T15:11:12.000Z",
+  "lastUpdated": "2026-09-04T10:38:07.000Z",
   "flights": [
     {
       "flight": 1,
@@ -269,21 +269,21 @@ const DATA =
           "team": 7,
           "bid": 400,
           "owner": "0",
-          "member": "Korndorffer, Blake",
-          "guest": "Buratto, Mark",
+          "member": "Drain, Zip",
+          "guest": "Fogleman, Nick",
           "team_hcp": "6.7",
-          "member_hcp": "1.3",
-          "guest_hcp": "5.4"
+          "member_hcp": "6.2",
+          "guest_hcp": "0.5"
         },
         {
           "team": 8,
           "bid": 400,
           "owner": "0",
-          "member": "Black, Gene",
-          "guest": "Tilson, Scott",
-          "team_hcp": "6.9",
-          "member_hcp": "4.3",
-          "guest_hcp": "2.6"
+          "member": "Korndorffer, Blake",
+          "guest": "Buratto, Mark",
+          "team_hcp": "6.7",
+          "member_hcp": "1.3",
+          "guest_hcp": "5.4"
         }
       ],
       "flight_winners": [
@@ -395,6 +395,16 @@ const DATA =
           "team": 1,
           "bid": 400,
           "owner": "0",
+          "member": "Black, Gene",
+          "guest": "Tilson, Scott",
+          "team_hcp": "6.9",
+          "member_hcp": "4.3",
+          "guest_hcp": "2.6"
+        },
+        {
+          "team": 2,
+          "bid": 400,
+          "owner": "0",
           "member": "Darter, Bret",
           "guest": "Cathey, Jake",
           "team_hcp": "7.6",
@@ -402,7 +412,7 @@ const DATA =
           "guest_hcp": "8.3"
         },
         {
-          "team": 2,
+          "team": 3,
           "bid": 400,
           "owner": "0",
           "member": "Krauss, Mitchell",
@@ -412,7 +422,7 @@ const DATA =
           "guest_hcp": "4.1"
         },
         {
-          "team": 3,
+          "team": 4,
           "bid": 400,
           "owner": "0",
           "member": "Martin, Aaron",
@@ -422,7 +432,7 @@ const DATA =
           "guest_hcp": "7.6"
         },
         {
-          "team": 4,
+          "team": 5,
           "bid": 400,
           "owner": "0",
           "member": "Jain, Nitin",
@@ -432,7 +442,7 @@ const DATA =
           "guest_hcp": "1.2"
         },
         {
-          "team": 5,
+          "team": 6,
           "bid": 400,
           "owner": "0",
           "member": "McDonald, David",
@@ -442,7 +452,7 @@ const DATA =
           "guest_hcp": "2"
         },
         {
-          "team": 6,
+          "team": 7,
           "bid": 400,
           "owner": "0",
           "member": "Lau, Jason",
@@ -452,7 +462,7 @@ const DATA =
           "guest_hcp": "3.2"
         },
         {
-          "team": 7,
+          "team": 8,
           "bid": 400,
           "owner": "0",
           "member": "Herrick, Matthew",
@@ -460,16 +470,6 @@ const DATA =
           "team_hcp": "9.2",
           "member_hcp": "5.8",
           "guest_hcp": "3.4"
-        },
-        {
-          "team": 8,
-          "bid": 400,
-          "owner": "0",
-          "member": "Primeaux, Michael",
-          "guest": "Lawrence, Sam",
-          "team_hcp": "9.4",
-          "member_hcp": "4.7",
-          "guest_hcp": "4.7"
         }
       ],
       "flight_winners": [
@@ -581,6 +581,16 @@ const DATA =
           "team": 1,
           "bid": 400,
           "owner": "0",
+          "member": "Primeaux, Michael",
+          "guest": "Lawrence, Sam",
+          "team_hcp": "9.4",
+          "member_hcp": "4.7",
+          "guest_hcp": "4.7"
+        },
+        {
+          "team": 2,
+          "bid": 400,
+          "owner": "0",
           "member": "Scott, Jonathan",
           "guest": "Vedamendikam, John",
           "team_hcp": "9.6",
@@ -588,7 +598,7 @@ const DATA =
           "guest_hcp": "5.9"
         },
         {
-          "team": 2,
+          "team": 3,
           "bid": 400,
           "owner": "0",
           "member": "Waclawsky, Paul",
@@ -598,7 +608,7 @@ const DATA =
           "guest_hcp": "8"
         },
         {
-          "team": 3,
+          "team": 4,
           "bid": 400,
           "owner": "0",
           "member": "Marshall, Nate",
@@ -608,7 +618,7 @@ const DATA =
           "guest_hcp": "2.3"
         },
         {
-          "team": 4,
+          "team": 5,
           "bid": 400,
           "owner": "0",
           "member": "Brymer, Cory",
@@ -618,7 +628,7 @@ const DATA =
           "guest_hcp": "6.8"
         },
         {
-          "team": 5,
+          "team": 6,
           "bid": 400,
           "owner": "0",
           "member": "Thurston, Andy",
@@ -628,7 +638,7 @@ const DATA =
           "guest_hcp": "4.7"
         },
         {
-          "team": 6,
+          "team": 7,
           "bid": 400,
           "owner": "0",
           "member": "Sherman, Michael",
@@ -638,7 +648,7 @@ const DATA =
           "guest_hcp": "3.4"
         },
         {
-          "team": 7,
+          "team": 8,
           "bid": 400,
           "owner": "0",
           "member": "Higginbotham, Andrew",
@@ -646,16 +656,6 @@ const DATA =
           "team_hcp": "11.3",
           "member_hcp": "3.5",
           "guest_hcp": "7.8"
-        },
-        {
-          "team": 8,
-          "bid": 400,
-          "owner": "0",
-          "member": "Aghazadeh, Abee",
-          "guest": "Lynch, TJ",
-          "team_hcp": "11.4",
-          "member_hcp": "6.6",
-          "guest_hcp": "4.8"
         }
       ],
       "flight_winners": [
@@ -767,6 +767,16 @@ const DATA =
           "team": 1,
           "bid": 400,
           "owner": "0",
+          "member": "Aghazadeh, Abee",
+          "guest": "Lynch, TJ",
+          "team_hcp": "11.4",
+          "member_hcp": "6.6",
+          "guest_hcp": "4.8"
+        },
+        {
+          "team": 2,
+          "bid": 400,
+          "owner": "0",
           "member": "Ramirez, David",
           "guest": "Oster, Neil",
           "team_hcp": "11.5",
@@ -774,7 +784,7 @@ const DATA =
           "guest_hcp": "7.4"
         },
         {
-          "team": 2,
+          "team": 3,
           "bid": 400,
           "owner": "0",
           "member": "Escobar, Rafael",
@@ -784,7 +794,7 @@ const DATA =
           "guest_hcp": "10.3"
         },
         {
-          "team": 3,
+          "team": 4,
           "bid": 400,
           "owner": "0",
           "member": "Pavlu, Ryan",
@@ -794,7 +804,7 @@ const DATA =
           "guest_hcp": "8.3"
         },
         {
-          "team": 4,
+          "team": 5,
           "bid": 400,
           "owner": "0",
           "member": "Barrera, David",
@@ -804,7 +814,7 @@ const DATA =
           "guest_hcp": "4.4"
         },
         {
-          "team": 5,
+          "team": 6,
           "bid": 400,
           "owner": "0",
           "member": "Manganaro, Tony",
@@ -812,16 +822,6 @@ const DATA =
           "team_hcp": "12.7",
           "member_hcp": "6.8",
           "guest_hcp": "5.9"
-        },
-        {
-          "team": 6,
-          "bid": 400,
-          "owner": "0",
-          "member": "Munoz, Juan",
-          "guest": "Sanchez, Bert",
-          "team_hcp": "13.1",
-          "member_hcp": "7.1",
-          "guest_hcp": "6"
         },
         {
           "team": 7,
@@ -1326,13 +1326,23 @@ const DATA =
           "bid": 400,
           "owner": "0",
           "member": "Castillo, Pilar",
-          "guest": "Lewis, John",
+          "guest": "O'Grady, Andrew",
           "team_hcp": "18",
           "member_hcp": "11.6",
           "guest_hcp": "6.4"
         },
         {
           "team": 2,
+          "bid": 400,
+          "owner": "0",
+          "member": "Johnson, Steven",
+          "guest": "Ehlert, Justin",
+          "team_hcp": "18.2",
+          "member_hcp": "9",
+          "guest_hcp": "9.2"
+        },
+        {
+          "team": 3,
           "bid": 400,
           "owner": "0",
           "member": "Schnautz, David",
@@ -1342,7 +1352,7 @@ const DATA =
           "guest_hcp": "7"
         },
         {
-          "team": 3,
+          "team": 4,
           "bid": 400,
           "owner": "0",
           "member": "Kandala, Ravi",
@@ -1352,7 +1362,7 @@ const DATA =
           "guest_hcp": "12.7"
         },
         {
-          "team": 4,
+          "team": 5,
           "bid": 400,
           "owner": "0",
           "member": "Ryan, Mike",
@@ -1362,7 +1372,7 @@ const DATA =
           "guest_hcp": "7.2"
         },
         {
-          "team": 5,
+          "team": 6,
           "bid": 400,
           "owner": "0",
           "member": "Jackson, Eric",
@@ -1372,7 +1382,7 @@ const DATA =
           "guest_hcp": "11"
         },
         {
-          "team": 6,
+          "team": 7,
           "bid": 400,
           "owner": "0",
           "member": "Edwards, Patric",
@@ -1380,16 +1390,6 @@ const DATA =
           "team_hcp": "20",
           "member_hcp": "9.7",
           "guest_hcp": "10.3"
-        },
-        {
-          "team": 7,
-          "bid": 400,
-          "owner": "0",
-          "member": "Drain, Zip",
-          "guest": "Charbel Dahdah",
-          "team_hcp": "20.1",
-          "member_hcp": "6.2",
-          "guest_hcp": "13.9"
         },
         {
           "team": 8,
@@ -1737,6 +1737,16 @@ const DATA =
           "team": 5,
           "bid": 400,
           "owner": "0",
+          "member": "Dubay, John",
+          "guest": "Anderson, Michael",
+          "team_hcp": "32.3",
+          "member_hcp": "18.7",
+          "guest_hcp": "13.6"
+        },
+        {
+          "team": 6,
+          "bid": 400,
+          "owner": "0",
           "member": "Tweedt, Brian",
           "guest": "Fields, Tom",
           "team_hcp": "34.5",
@@ -1744,7 +1754,7 @@ const DATA =
           "guest_hcp": "13.1"
         },
         {
-          "team": 6,
+          "team": 7,
           "bid": 400,
           "owner": "0",
           "member": "Connally, Jason",
@@ -1752,16 +1762,6 @@ const DATA =
           "team_hcp": "35.5",
           "member_hcp": "16.7",
           "guest_hcp": "18.8"
-        },
-        {
-          "team": 7,
-          "bid": 400,
-          "owner": "0",
-          "member": "Nesbitt, David",
-          "guest": "Parnell, Chris",
-          "team_hcp": "36.5",
-          "member_hcp": "17",
-          "guest_hcp": "19.5"
         },
         {
           "team": 8,
@@ -1878,7 +1878,7 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-08-28T15:11:12.000Z"
+    "generated": "2026-09-04T10:38:07.000Z"
   },
   "_dataCheck": {
     "flightCount": 10,
