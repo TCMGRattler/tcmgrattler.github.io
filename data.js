@@ -13,7 +13,7 @@ const DATA =
     "secondPlace": 275,
     "thirdPlace": 185
   },
-  "lastUpdated": "2026-09-04T10:38:07.000Z",
+  "lastUpdated": "2026-09-08T10:09:31.000Z",
   "flights": [
     {
       "flight": 1,
@@ -827,21 +827,21 @@ const DATA =
           "team": 7,
           "bid": 400,
           "owner": "0",
-          "member": "Nugent, Tim",
-          "guest": "Nugent, Mike",
+          "member": "Castillo, Pilar",
+          "guest": "O'Grady, Andrew",
           "team_hcp": "13.3",
-          "member_hcp": "7.1",
-          "guest_hcp": "6.2"
+          "member_hcp": "11.6",
+          "guest_hcp": "1.7"
         },
         {
           "team": 8,
           "bid": 400,
           "owner": "0",
-          "member": "Butler, Gregory",
-          "guest": "Butler, Jonathan",
-          "team_hcp": "13.5",
-          "member_hcp": "7.4",
-          "guest_hcp": "6.1"
+          "member": "Nugent, Tim",
+          "guest": "Nugent, Mike",
+          "team_hcp": "13.3",
+          "member_hcp": "7.1",
+          "guest_hcp": "6.2"
         }
       ],
       "flight_winners": [
@@ -953,6 +953,16 @@ const DATA =
           "team": 1,
           "bid": 400,
           "owner": "0",
+          "member": "Butler, Gregory",
+          "guest": "Butler, Jonathan",
+          "team_hcp": "13.5",
+          "member_hcp": "7.4",
+          "guest_hcp": "6.1"
+        },
+        {
+          "team": 2,
+          "bid": 400,
+          "owner": "0",
           "member": "Crutcher, Ian",
           "guest": "Crutcher, Jonathan",
           "team_hcp": "13.9",
@@ -960,7 +970,7 @@ const DATA =
           "guest_hcp": "11.8"
         },
         {
-          "team": 2,
+          "team": 3,
           "bid": 400,
           "owner": "0",
           "member": "Vaughn, Earl",
@@ -970,7 +980,7 @@ const DATA =
           "guest_hcp": "8.6"
         },
         {
-          "team": 3,
+          "team": 4,
           "bid": 400,
           "owner": "0",
           "member": "Scott, Paul",
@@ -980,7 +990,7 @@ const DATA =
           "guest_hcp": "2.7"
         },
         {
-          "team": 4,
+          "team": 5,
           "bid": 400,
           "owner": "0",
           "member": "French, Arthur",
@@ -990,7 +1000,7 @@ const DATA =
           "guest_hcp": "6"
         },
         {
-          "team": 5,
+          "team": 6,
           "bid": 400,
           "owner": "0",
           "member": "Seger, Nicholas",
@@ -1000,7 +1010,7 @@ const DATA =
           "guest_hcp": "4"
         },
         {
-          "team": 6,
+          "team": 7,
           "bid": 400,
           "owner": "0",
           "member": "Newman, Tim",
@@ -1010,7 +1020,7 @@ const DATA =
           "guest_hcp": "6.3"
         },
         {
-          "team": 7,
+          "team": 8,
           "bid": 400,
           "owner": "0",
           "member": "Delisi, Richard",
@@ -1018,16 +1028,6 @@ const DATA =
           "team_hcp": "15.4",
           "member_hcp": "5.1",
           "guest_hcp": "10.3"
-        },
-        {
-          "team": 8,
-          "bid": 400,
-          "owner": "0",
-          "member": "Miller, Matthew",
-          "guest": "Miller, Dale",
-          "team_hcp": "15.6",
-          "member_hcp": "+0.3",
-          "guest_hcp": "15.9"
         }
       ],
       "flight_winners": [
@@ -1139,6 +1139,16 @@ const DATA =
           "team": 1,
           "bid": 400,
           "owner": "0",
+          "member": "Miller, Matthew",
+          "guest": "Miller, Dale",
+          "team_hcp": "15.6",
+          "member_hcp": "+0.3",
+          "guest_hcp": "15.9"
+        },
+        {
+          "team": 2,
+          "bid": 400,
+          "owner": "0",
           "member": "Conwell, Jerry",
           "guest": "Kendrick, Colin",
           "team_hcp": "16",
@@ -1146,7 +1156,7 @@ const DATA =
           "guest_hcp": "13.6"
         },
         {
-          "team": 2,
+          "team": 3,
           "bid": 400,
           "owner": "0",
           "member": "Harbers, Jeff",
@@ -1156,7 +1166,7 @@ const DATA =
           "guest_hcp": "9.4"
         },
         {
-          "team": 3,
+          "team": 4,
           "bid": 400,
           "owner": "0",
           "member": "Samsel, Steve",
@@ -1166,7 +1176,7 @@ const DATA =
           "guest_hcp": "13.7"
         },
         {
-          "team": 4,
+          "team": 5,
           "bid": 400,
           "owner": "0",
           "member": "Spencer, Tim",
@@ -1176,7 +1186,7 @@ const DATA =
           "guest_hcp": "11.3"
         },
         {
-          "team": 5,
+          "team": 6,
           "bid": 400,
           "owner": "0",
           "member": "New, Gunner",
@@ -1186,7 +1196,7 @@ const DATA =
           "guest_hcp": "0.4"
         },
         {
-          "team": 6,
+          "team": 7,
           "bid": 400,
           "owner": "0",
           "member": "Kromis, Daniel",
@@ -1196,7 +1206,7 @@ const DATA =
           "guest_hcp": "8.7"
         },
         {
-          "team": 7,
+          "team": 8,
           "bid": 400,
           "owner": "0",
           "member": "Rayl, Jeff",
@@ -1204,16 +1214,6 @@ const DATA =
           "team_hcp": "17",
           "member_hcp": "5.4",
           "guest_hcp": "11.6"
-        },
-        {
-          "team": 8,
-          "bid": 400,
-          "owner": "0",
-          "member": "Chavez Jr., Roger",
-          "guest": "Hill, Jason",
-          "team_hcp": "17",
-          "member_hcp": "10.2",
-          "guest_hcp": "6.8"
         }
       ],
       "flight_winners": [
@@ -1325,11 +1325,11 @@ const DATA =
           "team": 1,
           "bid": 400,
           "owner": "0",
-          "member": "Castillo, Pilar",
-          "guest": "O'Grady, Andrew",
-          "team_hcp": "18",
-          "member_hcp": "11.6",
-          "guest_hcp": "6.4"
+          "member": "Chavez Jr., Roger",
+          "guest": "Hill, Jason",
+          "team_hcp": "17",
+          "member_hcp": "10.2",
+          "guest_hcp": "6.8"
         },
         {
           "team": 2,
@@ -1878,7 +1878,7 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-09-04T10:38:07.000Z"
+    "generated": "2026-09-08T10:09:31.000Z"
   },
   "_dataCheck": {
     "flightCount": 10,
