@@ -3,17 +3,17 @@ const DATA =
   "summary": {
     "flightCount": 10,
     "teamCount": 80,
-    "avgBid": 542.5,
-    "topFlight": 10,
-    "topFlightTotal": 9800
+    "avgBid": 628.75,
+    "topFlight": 2,
+    "topFlightTotal": 10100
   },
   "shootout": {
-    "bonusPool": 1265,
-    "firstPlace": 635,
-    "secondPlace": 380,
-    "thirdPlace": 250
+    "bonusPool": 1470,
+    "firstPlace": 735,
+    "secondPlace": 440,
+    "thirdPlace": 295
   },
-  "lastUpdated": "2026-09-09T18:42:39.000Z",
+  "lastUpdated": "2026-09-09T18:51:51.000Z",
   "flights": [
     {
       "flight": 1,
@@ -203,12 +203,12 @@ const DATA =
     },
     {
       "flight": 2,
-      "total": 3200,
+      "total": 10100,
       "teams": [
         {
           "team": 1,
-          "bid": 400,
-          "owner": "0",
+          "bid": 2000,
+          "owner": "Aghazadeh, Abee",
           "member": "Purslow, Brock",
           "guest": "Purslow, Thad",
           "team_hcp": "4.6",
@@ -217,8 +217,8 @@ const DATA =
         },
         {
           "team": 2,
-          "bid": 400,
-          "owner": "0",
+          "bid": 1400,
+          "owner": "Stokley, Kyle",
           "member": "Stokley, Kyle",
           "guest": "Tomlinson, Gary",
           "team_hcp": "4.7",
@@ -227,8 +227,8 @@ const DATA =
         },
         {
           "team": 3,
-          "bid": 400,
-          "owner": "0",
+          "bid": 2300,
+          "owner": "Fulmer, Austen",
           "member": "Fulmer, Austen",
           "guest": "Pacheco, Jeremy",
           "team_hcp": "5.9",
@@ -237,7 +237,7 @@ const DATA =
         },
         {
           "team": 4,
-          "bid": 400,
+          "bid": 500,
           "owner": "0",
           "member": "Gonzalez, Adrian",
           "guest": "Brawley, Bill",
@@ -247,7 +247,7 @@ const DATA =
         },
         {
           "team": 5,
-          "bid": 400,
+          "bid": 500,
           "owner": "0",
           "member": "Peterson, Erik",
           "guest": "Ferrell, Ryan",
@@ -257,7 +257,7 @@ const DATA =
         },
         {
           "team": 6,
-          "bid": 400,
+          "bid": 500,
           "owner": "0",
           "member": "Spisak, Brian",
           "guest": "Thompson, Rodney",
@@ -267,7 +267,7 @@ const DATA =
         },
         {
           "team": 7,
-          "bid": 400,
+          "bid": 500,
           "owner": "0",
           "member": "Drain, Zip",
           "guest": "Fogleman, Nick",
@@ -277,8 +277,8 @@ const DATA =
         },
         {
           "team": 8,
-          "bid": 400,
-          "owner": "0",
+          "bid": 2400,
+          "owner": "Aghazadeh, Abee",
           "member": "Korndorffer, Blake",
           "guest": "Buratto, Mark",
           "team_hcp": "6.7",
@@ -291,7 +291,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "1",
-          "amount": 945,
+          "amount": 3055,
           "winner": "0",
           "owner": ""
         },
@@ -299,7 +299,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "2",
-          "amount": 565,
+          "amount": 1830,
           "winner": "0",
           "owner": ""
         },
@@ -307,7 +307,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "3",
-          "amount": 375,
+          "amount": 1220,
           "winner": "0",
           "owner": ""
         }
@@ -317,7 +317,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "1",
-          "amount": 165,
+          "amount": 545,
           "winner": "0",
           "owner": ""
         },
@@ -325,7 +325,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "2",
-          "amount": 100,
+          "amount": 325,
           "winner": "0",
           "owner": ""
         },
@@ -333,7 +333,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "3",
-          "amount": 65,
+          "amount": 215,
           "winner": "0",
           "owner": ""
         },
@@ -341,7 +341,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "1",
-          "amount": 165,
+          "amount": 545,
           "winner": "0",
           "owner": ""
         },
@@ -349,7 +349,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "2",
-          "amount": 100,
+          "amount": 325,
           "winner": "0",
           "owner": ""
         },
@@ -357,7 +357,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "3",
-          "amount": 65,
+          "amount": 215,
           "winner": "0",
           "owner": ""
         },
@@ -365,7 +365,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "1",
-          "amount": 165,
+          "amount": 545,
           "winner": "0",
           "owner": ""
         },
@@ -373,7 +373,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
-          "amount": 100,
+          "amount": 325,
           "winner": "0",
           "owner": ""
         },
@@ -381,7 +381,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
-          "amount": 65,
+          "amount": 215,
           "winner": "0",
           "owner": ""
         }
@@ -1878,12 +1878,12 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-09-09T18:42:39.000Z"
+    "generated": "2026-09-09T18:51:51.000Z"
   },
   "_dataCheck": {
     "flightCount": 10,
     "teamCount": 80,
-    "sumOfFlightTotals": 43400,
-    "sumOfTeamBids": 43400
+    "sumOfFlightTotals": 50300,
+    "sumOfTeamBids": 50300
   }
 };
