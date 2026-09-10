@@ -3,21 +3,21 @@ const DATA =
   "summary": {
     "flightCount": 10,
     "teamCount": 80,
-    "avgBid": 1601.25,
-    "topFlight": 7,
-    "topFlightTotal": 17700
+    "avgBid": 1727.5,
+    "topFlight": 1,
+    "topFlightTotal": 21800
   },
   "shootout": {
-    "bonusPool": 3805,
-    "firstPlace": 1905,
-    "secondPlace": 1140,
-    "thirdPlace": 760
+    "bonusPool": 4105,
+    "firstPlace": 2055,
+    "secondPlace": 1230,
+    "thirdPlace": 820
   },
-  "lastUpdated": "2026-09-09T20:44:17.000Z",
+  "lastUpdated": "2026-09-09T20:55:28.000Z",
   "flights": [
     {
       "flight": 1,
-      "total": 11700,
+      "total": 21800,
       "teams": [
         {
           "team": 1,
@@ -51,8 +51,8 @@ const DATA =
         },
         {
           "team": 4,
-          "bid": 1100,
-          "owner": "0",
+          "bid": 2100,
+          "owner": "Herrick, Matthew",
           "member": "Kemps, Matt",
           "guest": "Dickinson, Todd",
           "team_hcp": "2.7",
@@ -61,8 +61,8 @@ const DATA =
         },
         {
           "team": 5,
-          "bid": 400,
-          "owner": "0",
+          "bid": 2600,
+          "owner": "Aghazadeh, Abee",
           "member": "Kim, Steven",
           "guest": "Kerrigan, Mike",
           "team_hcp": "2.8",
@@ -71,8 +71,8 @@ const DATA =
         },
         {
           "team": 6,
-          "bid": 400,
-          "owner": "0",
+          "bid": 2300,
+          "owner": "Grantham, Mark",
           "member": "Paschke, Michael",
           "guest": "Montes, Daniel",
           "team_hcp": "2.9",
@@ -81,8 +81,8 @@ const DATA =
         },
         {
           "team": 7,
-          "bid": 400,
-          "owner": "0",
+          "bid": 3000,
+          "owner": "Brymer, Cory",
           "member": "Gromfin, Ryan",
           "guest": "Moreno, Jeremy",
           "team_hcp": "3.1",
@@ -91,8 +91,8 @@ const DATA =
         },
         {
           "team": 8,
-          "bid": 400,
-          "owner": "0",
+          "bid": 2800,
+          "owner": "Escalante, Christian",
           "member": "Escalante, Christian",
           "guest": "McCammon, John",
           "team_hcp": "3.9",
@@ -105,7 +105,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "1",
-          "amount": 3540,
+          "amount": 6625,
           "winner": "0",
           "owner": ""
         },
@@ -113,7 +113,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "2",
-          "amount": 2125,
+          "amount": 3975,
           "winner": "0",
           "owner": ""
         },
@@ -121,7 +121,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "3",
-          "amount": 1415,
+          "amount": 2650,
           "winner": "0",
           "owner": ""
         }
@@ -131,7 +131,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "1",
-          "amount": 635,
+          "amount": 1185,
           "winner": "0",
           "owner": ""
         },
@@ -139,7 +139,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "2",
-          "amount": 380,
+          "amount": 710,
           "winner": "0",
           "owner": ""
         },
@@ -147,7 +147,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "3",
-          "amount": 250,
+          "amount": 475,
           "winner": "0",
           "owner": ""
         },
@@ -155,7 +155,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "1",
-          "amount": 635,
+          "amount": 1185,
           "winner": "0",
           "owner": ""
         },
@@ -163,7 +163,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "2",
-          "amount": 380,
+          "amount": 710,
           "winner": "0",
           "owner": ""
         },
@@ -171,7 +171,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "3",
-          "amount": 250,
+          "amount": 475,
           "winner": "0",
           "owner": ""
         },
@@ -179,7 +179,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "1",
-          "amount": 635,
+          "amount": 1185,
           "winner": "0",
           "owner": ""
         },
@@ -187,7 +187,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
-          "amount": 380,
+          "amount": 710,
           "winner": "0",
           "owner": ""
         },
@@ -195,7 +195,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
-          "amount": 250,
+          "amount": 475,
           "winner": "0",
           "owner": ""
         }
@@ -1878,12 +1878,12 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-09-09T20:44:17.000Z"
+    "generated": "2026-09-09T20:55:28.000Z"
   },
   "_dataCheck": {
     "flightCount": 10,
     "teamCount": 80,
-    "sumOfFlightTotals": 128100,
-    "sumOfTeamBids": 128100
+    "sumOfFlightTotals": 138200,
+    "sumOfTeamBids": 138200
   }
 };
