@@ -3,17 +3,17 @@ const DATA =
   "summary": {
     "flightCount": 10,
     "teamCount": 80,
-    "avgBid": 1218.75,
+    "avgBid": 1325,
     "topFlight": 7,
     "topFlightTotal": 17700
   },
   "shootout": {
-    "bonusPool": 2885,
-    "firstPlace": 1445,
-    "secondPlace": 865,
-    "thirdPlace": 575
+    "bonusPool": 3150,
+    "firstPlace": 1575,
+    "secondPlace": 945,
+    "thirdPlace": 630
   },
-  "lastUpdated": "2026-09-09T20:01:16.000Z",
+  "lastUpdated": "2026-09-09T20:16:50.000Z",
   "flights": [
     {
       "flight": 1,
@@ -1505,12 +1505,12 @@ const DATA =
     },
     {
       "flight": 9,
-      "total": 4000,
+      "total": 12500,
       "teams": [
         {
           "team": 1,
-          "bid": 500,
-          "owner": "0",
+          "bid": 1200,
+          "owner": "Aghazadeh, Abee",
           "member": "Montaleone, Tony",
           "guest": "George, Tim",
           "team_hcp": "20.7",
@@ -1519,8 +1519,8 @@ const DATA =
         },
         {
           "team": 2,
-          "bid": 500,
-          "owner": "0",
+          "bid": 2000,
+          "owner": "Brymer, Cory",
           "member": "Cronin, Paul",
           "guest": "Peckham, Bob",
           "team_hcp": "21.4",
@@ -1529,8 +1529,8 @@ const DATA =
         },
         {
           "team": 3,
-          "bid": 500,
-          "owner": "0",
+          "bid": 1500,
+          "owner": "Capone, Michael",
           "member": "Cress, Pj",
           "guest": "Rutledge, Connor",
           "team_hcp": "22.2",
@@ -1539,8 +1539,8 @@ const DATA =
         },
         {
           "team": 4,
-          "bid": 500,
-          "owner": "0",
+          "bid": 1700,
+          "owner": "Aghazadeh, Abee",
           "member": "Grantham, Mark",
           "guest": "Shaw, Stuart",
           "team_hcp": "24.4",
@@ -1549,8 +1549,8 @@ const DATA =
         },
         {
           "team": 5,
-          "bid": 500,
-          "owner": "0",
+          "bid": 1300,
+          "owner": "Miller, Matthew",
           "member": "Reid, Sean",
           "guest": "Reid, Reilly",
           "team_hcp": "24.6",
@@ -1559,8 +1559,8 @@ const DATA =
         },
         {
           "team": 6,
-          "bid": 500,
-          "owner": "0",
+          "bid": 2700,
+          "owner": "Kellner, Timothy",
           "member": "Burton, Aaron",
           "guest": "Atkins, Mickey",
           "team_hcp": "24.8",
@@ -1569,8 +1569,8 @@ const DATA =
         },
         {
           "team": 7,
-          "bid": 500,
-          "owner": "0",
+          "bid": 1100,
+          "owner": "Lau, Jason",
           "member": "Tionloc, Alex",
           "guest": "Gracey, Chris",
           "team_hcp": "25.9",
@@ -1579,8 +1579,8 @@ const DATA =
         },
         {
           "team": 8,
-          "bid": 500,
-          "owner": "0",
+          "bid": 1000,
+          "owner": "Miller, Matthew",
           "member": "Zwiener, Lance",
           "guest": "Wampler, Jason",
           "team_hcp": "25.9",
@@ -1593,7 +1593,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "1",
-          "amount": 1190,
+          "amount": 3785,
           "winner": "0",
           "owner": ""
         },
@@ -1601,7 +1601,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "2",
-          "amount": 710,
+          "amount": 2270,
           "winner": "0",
           "owner": ""
         },
@@ -1609,7 +1609,7 @@ const DATA =
           "type": "Flight Winner",
           "day": "",
           "place": "3",
-          "amount": 475,
+          "amount": 1515,
           "winner": "0",
           "owner": ""
         }
@@ -1619,7 +1619,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "1",
-          "amount": 210,
+          "amount": 675,
           "winner": "0",
           "owner": ""
         },
@@ -1627,7 +1627,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "2",
-          "amount": 125,
+          "amount": 405,
           "winner": "0",
           "owner": ""
         },
@@ -1635,7 +1635,7 @@ const DATA =
           "type": "Day Money",
           "day": "Thursday",
           "place": "3",
-          "amount": 85,
+          "amount": 270,
           "winner": "0",
           "owner": ""
         },
@@ -1643,7 +1643,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "1",
-          "amount": 210,
+          "amount": 675,
           "winner": "0",
           "owner": ""
         },
@@ -1651,7 +1651,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "2",
-          "amount": 125,
+          "amount": 405,
           "winner": "0",
           "owner": ""
         },
@@ -1659,7 +1659,7 @@ const DATA =
           "type": "Day Money",
           "day": "Friday",
           "place": "3",
-          "amount": 85,
+          "amount": 270,
           "winner": "0",
           "owner": ""
         },
@@ -1667,7 +1667,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "1",
-          "amount": 210,
+          "amount": 675,
           "winner": "0",
           "owner": ""
         },
@@ -1675,7 +1675,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
-          "amount": 125,
+          "amount": 405,
           "winner": "0",
           "owner": ""
         },
@@ -1683,7 +1683,7 @@ const DATA =
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
-          "amount": 85,
+          "amount": 270,
           "winner": "0",
           "owner": ""
         }
@@ -1878,12 +1878,12 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-09-09T20:01:16.000Z"
+    "generated": "2026-09-09T20:16:50.000Z"
   },
   "_dataCheck": {
     "flightCount": 10,
     "teamCount": 80,
-    "sumOfFlightTotals": 97500,
-    "sumOfTeamBids": 97500
+    "sumOfFlightTotals": 106000,
+    "sumOfTeamBids": 106000
   }
 };
