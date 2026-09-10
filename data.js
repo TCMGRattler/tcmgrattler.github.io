@@ -13,7 +13,7 @@ const DATA =
     "secondPlace": 945,
     "thirdPlace": 630
   },
-  "lastUpdated": "2026-09-09T20:16:50.000Z",
+  "lastUpdated": "2026-09-09T20:18:33.000Z",
   "flights": [
     {
       "flight": 1,
@@ -1878,7 +1878,7 @@ const DATA =
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-09-09T20:16:50.000Z"
+    "generated": "2026-09-09T20:18:33.000Z"
   },
   "_dataCheck": {
     "flightCount": 10,
