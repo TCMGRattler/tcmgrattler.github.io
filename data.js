@@ -13,7 +13,7 @@ const DATA =
     "secondPlace": 1360,
     "thirdPlace": 905
   },
-  "lastUpdated": "2026-09-12T00:55:12.000Z",
+  "lastUpdated": "2026-09-12T17:30:42.000Z",
   "flights": [
     {
       "flight": 1,
@@ -106,24 +106,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 6625,
-          "winner": "0",
-          "owner": ""
+          "winner": "Kim, Steven",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 3975,
-          "winner": "0",
-          "owner": ""
+          "winner": "Gromfin, Ryan",
+          "owner": "Brymer, Cory"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 2650,
-          "winner": "0",
-          "owner": ""
+          "winner": "Alden, Jonathan",
+          "owner": "Alden, Jonathan"
         }
       ],
       "day_money": [
@@ -180,24 +180,24 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 1185,
-          "winner": "0",
-          "owner": ""
+          "winner": "Kim, Steven",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 710,
-          "winner": "0",
-          "owner": ""
+          "winner": "Kemps, Matt",
+          "owner": "Herrick, Matthew"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 475,
-          "winner": "0",
-          "owner": ""
+          "winner": "Gromfin, Ryan",
+          "owner": "Brymer, Cory"
         }
       ]
     },
@@ -292,24 +292,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 4945,
-          "winner": "0",
-          "owner": ""
+          "winner": "Korndorffer, Blake",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 2965,
-          "winner": "0",
-          "owner": ""
+          "winner": "Fulmer, Austen",
+          "owner": "Fulmer, Austen"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 1975,
-          "winner": "0",
-          "owner": ""
+          "winner": "Spisak, Brian",
+          "owner": "Spisak, Brian"
         }
       ],
       "day_money": [
@@ -366,24 +366,24 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 885,
-          "winner": "0",
-          "owner": ""
+          "winner": "Gonzalez, Adrian",
+          "owner": "Gonzalez, Adrian"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 530,
-          "winner": "0",
-          "owner": ""
+          "winner": "Korndorffer, Blake",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 355,
-          "winner": "0",
-          "owner": ""
+          "winner": "Stokley, Kyle",
+          "owner": "Stokley, Kyle"
         }
       ]
     },
@@ -478,24 +478,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 5100,
-          "winner": "0",
-          "owner": ""
+          "winner": "Jain, Nitin",
+          "owner": "Jain, Nitin"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 3060,
-          "winner": "0",
-          "owner": ""
+          "winner": "Herrick, Matthew",
+          "owner": "Brymer, Cory"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 2040,
-          "winner": "0",
-          "owner": ""
+          "winner": "Darter, Bret",
+          "owner": "Aghazadeh, Abee"
         }
       ],
       "day_money": [
@@ -552,24 +552,24 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 915,
-          "winner": "0",
-          "owner": ""
+          "winner": "Herrick, Matthew",
+          "owner": "Brymer, Cory"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 545,
-          "winner": "0",
-          "owner": ""
+          "winner": "Jain, Nitin",
+          "owner": "Jain, Nitin"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 365,
-          "winner": "0",
-          "owner": ""
+          "winner": "Darter, Bret",
+          "owner": "Aghazadeh, Abee"
         }
       ]
     },
@@ -664,24 +664,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 5010,
-          "winner": "0",
-          "owner": ""
+          "winner": "Waclawsky, Paul",
+          "owner": "Waclawsky, Paul"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 3005,
-          "winner": "0",
-          "owner": ""
+          "winner": "Brymer, Cory",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 2000,
-          "winner": "0",
-          "owner": ""
+          "winner": "Marshall, Nate",
+          "owner": "Marshall, Nate"
         }
       ],
       "day_money": [
@@ -738,24 +738,24 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 895,
-          "winner": "0",
-          "owner": ""
+          "winner": "Brymer, Cory",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 535,
-          "winner": "0",
-          "owner": ""
+          "winner": "Waclawsky, Paul",
+          "owner": "Waclawsky, Paul"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 355,
-          "winner": "0",
-          "owner": ""
+          "winner": "Sherman, Michael",
+          "owner": "Drain, Zip"
         }
       ]
     },
@@ -850,24 +850,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 4735,
-          "winner": "0",
-          "owner": ""
+          "winner": "Aghazadeh, Abee",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 2840,
-          "winner": "0",
-          "owner": ""
+          "winner": "Escobar, Rafael",
+          "owner": "Vaughn, Earl"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 1890,
-          "winner": "0",
-          "owner": ""
+          "winner": "Pavlu, Ryan",
+          "owner": "Pavlu, Ryan"
         }
       ],
       "day_money": [
@@ -924,24 +924,24 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 845,
-          "winner": "0",
-          "owner": ""
+          "winner": "Aghazadeh, Abee",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 505,
-          "winner": "0",
-          "owner": ""
+          "winner": "Pavlu, Ryan",
+          "owner": "Pavlu, Ryan"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 335,
-          "winner": "0",
-          "owner": ""
+          "winner": "Escobar, Rafael",
+          "owner": "Vaughn, Earl"
         }
       ]
     },
@@ -1036,24 +1036,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 5285,
-          "winner": "0",
-          "owner": ""
+          "winner": "French, Arthur",
+          "owner": "French, Arthur"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 3170,
-          "winner": "0",
-          "owner": ""
+          "winner": "Vaughn, Earl",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 2110,
-          "winner": "0",
-          "owner": ""
+          "winner": "Butler, Gregory",
+          "owner": "Aghazadeh, Abee"
         }
       ],
       "day_money": [
@@ -1110,24 +1110,24 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 945,
-          "winner": "0",
-          "owner": ""
+          "winner": "French, Arthur",
+          "owner": "French, Arthur"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 565,
-          "winner": "0",
-          "owner": ""
+          "winner": "Crutcher, Ian",
+          "owner": "Schnautz, David"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 375,
-          "winner": "0",
-          "owner": ""
+          "winner": "Vaughn, Earl",
+          "owner": "Aghazadeh, Abee"
         }
       ]
     },
@@ -1222,24 +1222,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 5375,
-          "winner": "0",
-          "owner": ""
+          "winner": "Spencer, Tim",
+          "owner": "Miller, Matthew"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 3225,
-          "winner": "0",
-          "owner": ""
+          "winner": "Miller, Matthew",
+          "owner": "Schnautz, David"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 2150,
-          "winner": "0",
-          "owner": ""
+          "winner": "Harbers, Jeff",
+          "owner": "Kandala, Ravi"
         }
       ],
       "day_money": [
@@ -1296,24 +1296,24 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 965,
-          "winner": "0",
-          "owner": ""
+          "winner": "Spencer, Tim",
+          "owner": "Miller, Matthew"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 575,
-          "winner": "0",
-          "owner": ""
+          "winner": "Miller, Matthew",
+          "owner": "Schnautz, David"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 385,
-          "winner": "0",
-          "owner": ""
+          "winner": "New, Gunner",
+          "owner": "New, Gunner"
         }
       ]
     },
@@ -1408,24 +1408,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 2410,
-          "winner": "0",
-          "owner": ""
+          "winner": "Kandala, Ravi",
+          "owner": "Kandala, Ravi"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 1445,
-          "winner": "0",
-          "owner": ""
+          "winner": "Schnautz, David",
+          "owner": "McDonald, David"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 965,
-          "winner": "0",
-          "owner": ""
+          "winner": "Ryan, Mike",
+          "owner": "Herrick, Matthew"
         }
       ],
       "day_money": [
@@ -1482,24 +1482,24 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 430,
-          "winner": "0",
-          "owner": ""
+          "winner": "Ryan, Mike",
+          "owner": "Herrick, Matthew"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 255,
-          "winner": "0",
-          "owner": ""
+          "winner": "Schnautz, David",
+          "owner": "McDonald, David"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 170,
-          "winner": "0",
-          "owner": ""
+          "winner": "Kandala, Ravi",
+          "owner": "Kandala, Ravi"
         }
       ]
     },
@@ -1594,24 +1594,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 3785,
-          "winner": "0",
-          "owner": ""
+          "winner": "Grantham, Mark",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 2270,
-          "winner": "0",
-          "owner": ""
+          "winner": "Burton, Aaron",
+          "owner": "Kellner, Timothy"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 1515,
-          "winner": "0",
-          "owner": ""
+          "winner": "Tionloc, Alex",
+          "owner": "Lau, Jason"
         }
       ],
       "day_money": [
@@ -1668,24 +1668,24 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 675,
-          "winner": "0",
-          "owner": ""
+          "winner": "Cress, Pj",
+          "owner": "Capone, Michael"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 405,
-          "winner": "0",
-          "owner": ""
+          "winner": "Montaleone, Tony",
+          "owner": "Aghazadeh, Abee"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 270,
-          "winner": "0",
-          "owner": ""
+          "winner": "Tionloc, Alex",
+          "owner": "Lau, Jason"
         }
       ]
     },
@@ -1780,24 +1780,24 @@ const DATA =
           "day": "",
           "place": "1",
           "amount": 2960,
-          "winner": "0",
-          "owner": ""
+          "winner": "Pfaffe, Kyle",
+          "owner": "Pfaffe, Kyle"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "2",
           "amount": 1775,
-          "winner": "0",
-          "owner": ""
+          "winner": "Capone, Michael",
+          "owner": "Capone, Michael"
         },
         {
           "type": "Flight Winner",
           "day": "",
           "place": "3",
           "amount": 1185,
-          "winner": "0",
-          "owner": ""
+          "winner": "Weibel, Dustin",
+          "owner": "Miller, Matthew"
         }
       ],
       "day_money": [
@@ -1854,31 +1854,31 @@ const DATA =
           "day": "Saturday",
           "place": "1",
           "amount": 530,
-          "winner": "0",
-          "owner": ""
+          "winner": "Pfaffe, Kyle",
+          "owner": "Pfaffe, Kyle"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "2",
           "amount": 315,
-          "winner": "0",
-          "owner": ""
+          "winner": "Weibel, Dustin",
+          "owner": "Miller, Matthew"
         },
         {
           "type": "Day Money",
           "day": "Saturday",
           "place": "3",
           "amount": 210,
-          "winner": "0",
-          "owner": ""
+          "winner": "Capone, Michael",
+          "owner": "Capone, Michael"
         }
       ]
     }
   ],
   "_source": {
     "file": "2026 MG Master Spreadsheet v1.xlsx",
-    "generated": "2026-09-12T00:55:12.000Z"
+    "generated": "2026-09-12T17:30:42.000Z"
   },
   "_dataCheck": {
     "flightCount": 10,
